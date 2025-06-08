@@ -94,4 +94,10 @@ Button("Play Video") {
     VideoPlayerService.shared.setShowBack10Button(true)
 }
 ```
+### [1.0.0] - 2025-06-09
+- Fixed layout issues in landscape on iPhone
+- Controls now disappear after timeout
+- Progress bar no longer changes thickness dynamically
+- Timer panel stays consistent in size and position
+- Resolved video freeze on resume from background
 
