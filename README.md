@@ -101,3 +101,8 @@ Button("Play Video") {
 - Timer panel stays consistent in size and position
 - Resolved video freeze on resume from background
 
+### [1.1.0] – 2025-06-12
+- Fixed video freeze issue when resuming the app from the background.
+- Made progress bar evenly shaped on both sides.
+- Added proper spacing for the back button and progress bar in portrait mode.
+- Improved playback stability when switching between background and foreground.
