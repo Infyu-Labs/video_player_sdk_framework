@@ -13,23 +13,43 @@ import _AVKit_SwiftUI
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-extension UIKit.UIApplication {
-  @_Concurrency.MainActor @preconcurrency public func topMostViewController() -> UIKit.UIViewController?
-}
-extension UIKit.UIImage {
-  public func resized(to target: CoreFoundation.CGSize) -> UIKit.UIImage
-}
-extension SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public func isHidden(_ bool: Swift.Bool) -> some SwiftUICore.View
-  
-  @_Concurrency.MainActor @preconcurrency public func isDisabled(_ bool: Swift.Bool) -> some SwiftUICore.View
-  
+@_Concurrency.MainActor @preconcurrency public struct SwiftUISlider : SwiftUI.UIViewRepresentable {
+  @objc final public class Coordinator : ObjectiveC.NSObject {
+    public init(value: SwiftUICore.Binding<Swift.Double>, maxValue: Swift.Double, parent: UnityVideoPlugin.SwiftUISlider? = nil)
+    @objc deinit
+  }
+  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: UnityVideoPlugin.SwiftUISlider.Context) -> UIKit.UISlider
+  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: UIKit.UISlider, context: UnityVideoPlugin.SwiftUISlider.Context)
+  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> UnityVideoPlugin.SwiftUISlider.Coordinator
+  public typealias Body = Swift.Never
+  public typealias UIViewType = UIKit.UISlider
 }
 @_Concurrency.MainActor @preconcurrency public struct DissabledViewModifier : SwiftUICore.ViewModifier {
   @_Concurrency.MainActor @preconcurrency public func body(content: UnityVideoPlugin.DissabledViewModifier.Content) -> some SwiftUICore.View
   
   public typealias Body = @_opaqueReturnTypeOf("$s16UnityVideoPlugin21DissabledViewModifierV4body7contentQr7SwiftUI01_eF8_ContentVyACG_tF", 0) __
 }
+extension UIKit.UIImage {
+  public func resized(to target: CoreFoundation.CGSize) -> UIKit.UIImage
+}
+@_Concurrency.MainActor @preconcurrency public struct VideoPlayerView : SwiftUICore.View {
+  @SwiftUICore.ObservedObject @_projectedValueProperty($playerController) @_Concurrency.MainActor @preconcurrency public var playerController: UnityVideoPlugin.PlayerController {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  @_Concurrency.MainActor @preconcurrency public var $playerController: SwiftUICore.ObservedObject<UnityVideoPlugin.PlayerController>.Wrapper {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public init(playerController: UnityVideoPlugin.PlayerController)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s16UnityVideoPlugin0B10PlayerViewV4bodyQrvp", 0) __
+}
+
 @objc @_inheritsConvenienceInitializers public class PlayerController : ObjectiveC.NSObject, Foundation.ObservableObject {
   @Combine.Published @_projectedValueProperty($player) public var player: AVFoundation.AVPlayer? {
     get
@@ -267,11 +287,6 @@ extension SwiftUICore.View {
   @objc deinit
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
 }
-@_Concurrency.MainActor @preconcurrency public struct HiddenViewModifier : SwiftUICore.ViewModifier {
-  @_Concurrency.MainActor @preconcurrency public func body(content: UnityVideoPlugin.HiddenViewModifier.Content) -> some SwiftUICore.View
-  
-  public typealias Body = @_opaqueReturnTypeOf("$s16UnityVideoPlugin18HiddenViewModifierV4body7contentQr7SwiftUI01_eF8_ContentVyACG_tF", 0) __
-}
 @_cdecl("loadVideo")
 public func loadVideo(urlString: Swift.UnsafePointer<Swift.CChar>)
 @_cdecl("play")
@@ -330,36 +345,21 @@ public func setShowTimeDuration(_ visible: Swift.Bool)
   public func setShowTimeDuration(_ visible: Swift.Bool)
   @objc deinit
 }
-@_Concurrency.MainActor @preconcurrency public struct SwiftUISlider : SwiftUI.UIViewRepresentable {
-  @objc final public class Coordinator : ObjectiveC.NSObject {
-    public init(value: SwiftUICore.Binding<Swift.Double>, maxValue: Swift.Double, parent: UnityVideoPlugin.SwiftUISlider? = nil)
-    @objc deinit
-  }
-  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: UnityVideoPlugin.SwiftUISlider.Context) -> UIKit.UISlider
-  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: UIKit.UISlider, context: UnityVideoPlugin.SwiftUISlider.Context)
-  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> UnityVideoPlugin.SwiftUISlider.Coordinator
-  public typealias Body = Swift.Never
-  public typealias UIViewType = UIKit.UISlider
+extension UIKit.UIApplication {
+  @_Concurrency.MainActor @preconcurrency public func topMostViewController() -> UIKit.UIViewController?
 }
-@_Concurrency.MainActor @preconcurrency public struct VideoPlayerView : SwiftUICore.View {
-  @SwiftUICore.ObservedObject @_projectedValueProperty($playerController) @_Concurrency.MainActor @preconcurrency public var playerController: UnityVideoPlugin.PlayerController {
-    get
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    set
-    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-    _modify
-  }
-  @_Concurrency.MainActor @preconcurrency public var $playerController: SwiftUICore.ObservedObject<UnityVideoPlugin.PlayerController>.Wrapper {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public init(playerController: UnityVideoPlugin.PlayerController)
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s16UnityVideoPlugin0B10PlayerViewV4bodyQrvp", 0) __
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func isHidden(_ bool: Swift.Bool) -> some SwiftUICore.View
+  
+  @_Concurrency.MainActor @preconcurrency public func isDisabled(_ bool: Swift.Bool) -> some SwiftUICore.View
+  
 }
-
-extension UnityVideoPlugin.DissabledViewModifier : Swift.Sendable {}
-extension UnityVideoPlugin.HiddenViewModifier : Swift.Sendable {}
+@_Concurrency.MainActor @preconcurrency public struct HiddenViewModifier : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public func body(content: UnityVideoPlugin.HiddenViewModifier.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s16UnityVideoPlugin18HiddenViewModifierV4body7contentQr7SwiftUI01_eF8_ContentVyACG_tF", 0) __
+}
 extension UnityVideoPlugin.SwiftUISlider : Swift.Sendable {}
+extension UnityVideoPlugin.DissabledViewModifier : Swift.Sendable {}
 extension UnityVideoPlugin.VideoPlayerView : Swift.Sendable {}
+extension UnityVideoPlugin.HiddenViewModifier : Swift.Sendable {}
