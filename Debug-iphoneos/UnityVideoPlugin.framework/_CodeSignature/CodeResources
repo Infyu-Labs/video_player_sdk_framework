@@ -14,15 +14,15 @@
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		Eepm5WLQJPIuaHtXxEe7Cck/0oE=
+		68At96f2WTWsO1LJABaeoLfbMeI=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		lz5LjBbyP+fx0B3FuEp/6hJBM2E=
+		D3fw9uqeMhxCbasBP1YZC0sspGU=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		WT7kSfLl/X+Ra+J80whQWcPIHFM=
+		jGtKNwOSdnXmcKf9f0qHX5IgOg4=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		WT7kSfLl/X+Ra+J80whQWcPIHFM=
+		jGtKNwOSdnXmcKf9f0qHX5IgOg4=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		4Fa11bt5YV528WJeSd69Pq88dwQ=
+		C24ibc620baoijNeAabxWqTkIKw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -50,21 +50,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ks4ooPkBdrM3t6Qy7I6Jn7MXI16hJYQouW4g3uIoFxU=
+			ft8c7Egf7jmbC+yl40n48GIGBWB0cSOVRhlXgsOu+QE=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EXg6e8inN3m7CceKs1Xxm60xtRMjUmJegifEd2hJ8Sg=
+			qFZvIA+q3e+wzLiEuC56klj/lEXPvSxLlZkPYA1hoMo=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/0BeNrsvWPHRmH5Qg90wnTiELiGMyfRRG2C7LWcYhM0=
+			qNOiF62RnK8l57Ff7uKMB1a3gfbOJB3GJ6rko0Dw/Zc=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -78,14 +78,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/0BeNrsvWPHRmH5Qg90wnTiELiGMyfRRG2C7LWcYhM0=
+			qNOiF62RnK8l57Ff7uKMB1a3gfbOJB3GJ6rko0Dw/Zc=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PZGWBz8VMXvbT7AYYwf/vvr9wPQeJpxrF6vN+jOsvbk=
+			DRGkejt46NXCbMWoOfv8kocuAPHYOFT2fNuCXJKeFe0=
 			</data>
 		</dict>
 	</dict>
