@@ -78,6 +78,18 @@ public class VideoPlayerBridge : MonoBehaviour
     [DllImport("__Internal")]
     private static extern void setShowTimeDuration(bool visible);
 
+    [DllImport("__Internal")]
+    private static extern void registerUnityCallback(UnityCallback callback);
+
+    public delegate void UnityCallback(string message);
+
+    [AOT.MonoPInvokeCallback(typeof(UnityCallback))]
+    public static void OnSwiftEvent(string message)
+    {
+        Debug.Log("Video Event: " + message);
+        // Parse message like "event:exit,total:300,watched:240"
+    }
+
     #endregion
 
     #region Wrapper Functions (C# Methods to Call from Unity)

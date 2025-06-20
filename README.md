@@ -11,6 +11,61 @@ This SDK bridges native Swift-based video playback functionality with Unity usin
 - Link the framework using Unity’s `Plugins/iOS` folder structure.
 - **Set the minimum deployment target to iOS 15.0** for the framework.
 
+## 🎯 Key Features
+
+- ✅ Supports video formats: HLS, MP4, MOV
+- ✅ Playback controls:
+  - Play / Pause / Resume / Stop
+  - Seek Forward / Backward
+  - Skip +10 / -10 seconds
+  - Scrub slider
+  - Next / Previous video
+- ✅ Auto-hide controls
+- ✅ Exit/Back button support
+- ✅ Swift → Unity callback on control events
+
+---
+
+## 🔁 Swift-to-Unity Callback Integration
+
+This SDK supports calling back into Unity when video-related events occur (e.g., play, pause, exit, error).  
+It enables Unity to react to player events—useful for UI updates, analytics, or in-game logic.
+
+### 🔁 Triggering the Callback in Swift
+
+You can trigger Unity callbacks from Swift using:
+
+```swift
+sendUnityCallback("event:play")
+sendUnityCallback("event:pause")
+sendUnityCallback("event:exit,total:300,watched:240")
+
+### 📘 Example Usage in Unity
+
+To play a video using the SDK:
+
+```csharp
+using System.Runtime.InteropServices;
+using UnityEngine;
+
+public class VideoController : MonoBehaviour
+{
+    [DllImport("__Internal")]
+    private static extern void loadVideo(string url);
+
+    [DllImport("__Internal")]
+    private static extern void play();
+
+    public void LoadAndPlay()
+    {
+      ##if UNITY_IOS && !UNITY_EDITOR
+        loadVideo("https://example.com/video.m3u8");
+        play();
+      ##endif
+    }
+}
+
+
 ## 🧹 Unity Integration
 
 1. Create a C# MonoBehaviour Script (if not using the one provided).
