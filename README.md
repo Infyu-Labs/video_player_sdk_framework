@@ -98,6 +98,11 @@ public class VideoPlayerController : MonoBehaviour
     {
         playerBridge.Cleanup();
     }
+    
+    void OnApplicationPause ( bool pause )
+    {
+        if ( !pause )    playerBridge.Play();
+    }
 }
 ```
 
