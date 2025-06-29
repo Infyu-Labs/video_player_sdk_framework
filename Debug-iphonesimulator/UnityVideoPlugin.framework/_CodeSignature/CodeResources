@@ -14,19 +14,19 @@
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		1bvVJpIP8ZF9qyKmk0cLFV+G2SM=
+		PHOyDrk+61i3h1bS0tCinK37GjQ=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		hUCdnYz6NP/nbe/Lrucq8t8Ny2s=
+		5fUjsnX9odW6v+egKl4P5fYi2Hw=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		5jXG6KtAMnsymUZj0t9mr1JNHmY=
+		RSaij7Lt4t4mEBwK1EjL1ebqu/k=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		rKWoFTkKH5nftrP1Z3jhS7F7Qz8=
+		LWI7hA2NCVhZjAmjOlfqbWylOZI=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		rKWoFTkKH5nftrP1Z3jhS7F7Qz8=
+		LWI7hA2NCVhZjAmjOlfqbWylOZI=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aCaVQtg3b+R4F1kk6REqpG+z22E=
+		em5bhAcMfUvSZSWd8DYdq2xrA3M=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		5jXG6KtAMnsymUZj0t9mr1JNHmY=
+		RSaij7Lt4t4mEBwK1EjL1ebqu/k=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		eWdfV97/lYovYAbWz2JKU+eQqH0=
+		aJkV6HvrZdK/dEp0YqecTWw9npI=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		eWdfV97/lYovYAbWz2JKU+eQqH0=
+		aJkV6HvrZdK/dEp0YqecTWw9npI=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ofo8IKgs5C1p04GjTq6/vu8ZvRs=
+		Z3w16TNGwAhkVxy7yYQXNcVAZKg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -74,28 +74,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lzbRiZ1eUkvoDZTsflDWOWCKZWTk5ngrrGUJqOTjKuQ=
+			Gt6HJ9TGtzuhw9UBP1IqtwVaFjEHD9XUEbVJNbJ1lGk=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uFDOsdHKp2YaFEN59Rizau5/P5AZH7JdVkAip9YH9Dk=
+			r184UDFcoFQpNfDhSbFPuyTHwedni+uaswXV6Y14GXU=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x41ZH46qhhw3YZUieV2hNz7WJMbuaueCUI1hep/uCk4=
+			4cuhxZj+dKTOj3GHbxR3ulivHfe38t3+YBRuipNMknI=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ilUPrprS/7/sRHLLTjCMOf6XXuvx1SlWlmzl3xJxjhc=
+			yI6++9loVQxRREAmhr4d/PshKIEGMb5hlGMPlKgHI/I=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -109,28 +109,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ilUPrprS/7/sRHLLTjCMOf6XXuvx1SlWlmzl3xJxjhc=
+			yI6++9loVQxRREAmhr4d/PshKIEGMb5hlGMPlKgHI/I=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cNfWdxTJY61QTz6Y7mq20DznjhgmTbSCm6wRHz1vwfA=
+			ZcERRRm7ICXLzQSyJDGQPC+IkcQ6oORNZs2NLrAI70c=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x41ZH46qhhw3YZUieV2hNz7WJMbuaueCUI1hep/uCk4=
+			4cuhxZj+dKTOj3GHbxR3ulivHfe38t3+YBRuipNMknI=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q2jhmD9HIWpGQjLEmpJM6Yk2KlgU37r/RO0+W+kgoMY=
+			N2xSDzJlu3EZVdS7JNCM8x3J5As4UOuSSXV0ZBGBVrI=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -144,14 +144,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			q2jhmD9HIWpGQjLEmpJM6Yk2KlgU37r/RO0+W+kgoMY=
+			N2xSDzJlu3EZVdS7JNCM8x3J5As4UOuSSXV0ZBGBVrI=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5mYdr1ux8qmMT05Di86ei+YbMvms+Xgt58qh3aStECo=
+			kXx/ppnDA6rd/Ohjmdxjb6Ruo8mVzP3mCqu9dbiip9w=
 			</data>
 		</dict>
 	</dict>

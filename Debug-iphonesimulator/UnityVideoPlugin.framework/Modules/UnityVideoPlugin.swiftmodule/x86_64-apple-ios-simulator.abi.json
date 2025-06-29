@@ -16,16 +16,6 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1484,6 +1474,1360 @@
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnityVideoPlugin"
+      },
+      {
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "UnityVideoPlugin"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VideoPlayerView",
+        "printedName": "VideoPlayerView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "playerController",
+            "printedName": "playerController",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PlayerController",
+                "printedName": "UnityVideoPlugin.PlayerController",
+                "usr": "c:@M@UnityVideoPlugin@objc(cs)PlayerController"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin0B10PlayerViewV16playerControllerAA0dG0Cvp",
+            "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV16playerControllerAA0dG0Cvp",
+            "moduleName": "UnityVideoPlugin",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "ProjectedValueProperty",
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PlayerController",
+                    "printedName": "UnityVideoPlugin.PlayerController",
+                    "usr": "c:@M@UnityVideoPlugin@objc(cs)PlayerController"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin0B10PlayerViewV16playerControllerAA0dG0Cvg",
+                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV16playerControllerAA0dG0Cvg",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PlayerController",
+                    "printedName": "UnityVideoPlugin.PlayerController",
+                    "usr": "c:@M@UnityVideoPlugin@objc(cs)PlayerController"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin0B10PlayerViewV16playerControllerAA0dG0Cvs",
+                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV16playerControllerAA0dG0Cvs",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin0B10PlayerViewV16playerControllerAA0dG0CvM",
+                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV16playerControllerAA0dG0CvM",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$playerController",
+            "printedName": "$playerController",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Wrapper",
+                "printedName": "SwiftUI.ObservedObject<UnityVideoPlugin.PlayerController>.Wrapper",
+                "usr": "s:7SwiftUI14ObservedObjectV7WrapperV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin0B10PlayerViewV17$playerController7SwiftUI14ObservedObjectV7WrapperVyAA0dG0C_Gvp",
+            "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV17$playerController7SwiftUI14ObservedObjectV7WrapperVyAA0dG0C_Gvp",
+            "moduleName": "UnityVideoPlugin",
+            "implicit": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Wrapper",
+                    "printedName": "SwiftUI.ObservedObject<UnityVideoPlugin.PlayerController>.Wrapper",
+                    "usr": "s:7SwiftUI14ObservedObjectV7WrapperV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin0B10PlayerViewV17$playerController7SwiftUI14ObservedObjectV7WrapperVyAA0dG0C_Gvg",
+                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV17$playerController7SwiftUI14ObservedObjectV7WrapperVyAA0dG0C_Gvg",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "orientationObserver",
+            "printedName": "orientationObserver",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OrientationObserver",
+                "printedName": "UnityVideoPlugin.OrientationObserver",
+                "usr": "s:16UnityVideoPlugin19OrientationObserverC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin0B10PlayerViewV19orientationObserverAA011OrientationG0Cvp",
+            "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV19orientationObserverAA011OrientationG0Cvp",
+            "moduleName": "UnityVideoPlugin",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "ProjectedValueProperty",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OrientationObserver",
+                    "printedName": "UnityVideoPlugin.OrientationObserver",
+                    "usr": "s:16UnityVideoPlugin19OrientationObserverC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin0B10PlayerViewV19orientationObserverAA011OrientationG0Cvg",
+                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV19orientationObserverAA011OrientationG0Cvg",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OrientationObserver",
+                    "printedName": "UnityVideoPlugin.OrientationObserver",
+                    "usr": "s:16UnityVideoPlugin19OrientationObserverC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin0B10PlayerViewV19orientationObserverAA011OrientationG0Cvs",
+                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV19orientationObserverAA011OrientationG0Cvs",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin0B10PlayerViewV19orientationObserverAA011OrientationG0CvM",
+                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV19orientationObserverAA011OrientationG0CvM",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$orientationObserver",
+            "printedName": "$orientationObserver",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Wrapper",
+                "printedName": "SwiftUI.ObservedObject<UnityVideoPlugin.OrientationObserver>.Wrapper",
+                "usr": "s:7SwiftUI14ObservedObjectV7WrapperV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin0B10PlayerViewV20$orientationObserver7SwiftUI14ObservedObjectV7WrapperVyAA011OrientationG0C_Gvp",
+            "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV20$orientationObserver7SwiftUI14ObservedObjectV7WrapperVyAA011OrientationG0C_Gvp",
+            "moduleName": "UnityVideoPlugin",
+            "implicit": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Wrapper",
+                    "printedName": "SwiftUI.ObservedObject<UnityVideoPlugin.OrientationObserver>.Wrapper",
+                    "usr": "s:7SwiftUI14ObservedObjectV7WrapperV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin0B10PlayerViewV20$orientationObserver7SwiftUI14ObservedObjectV7WrapperVyAA011OrientationG0C_Gvg",
+                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV20$orientationObserver7SwiftUI14ObservedObjectV7WrapperVyAA011OrientationG0C_Gvg",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isRunningOnMac",
+            "printedName": "isRunningOnMac",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin0B10PlayerViewV14isRunningOnMacSbvp",
+            "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV14isRunningOnMacSbvp",
+            "moduleName": "UnityVideoPlugin",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin0B10PlayerViewV14isRunningOnMacSbvg",
+                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV14isRunningOnMacSbvg",
+                "moduleName": "UnityVideoPlugin",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(playerController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VideoPlayerView",
+                "printedName": "UnityVideoPlugin.VideoPlayerView",
+                "usr": "s:16UnityVideoPlugin0B10PlayerViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PlayerController",
+                "printedName": "UnityVideoPlugin.PlayerController",
+                "usr": "c:@M@UnityVideoPlugin@objc(cs)PlayerController"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16UnityVideoPlugin0B10PlayerViewV16playerControllerAcA0dG0C_tcfc",
+            "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV16playerControllerAcA0dG0C_tcfc",
+            "moduleName": "UnityVideoPlugin",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin0B10PlayerViewV4bodyQrvp",
+            "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV4bodyQrvp",
+            "moduleName": "UnityVideoPlugin",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin0B10PlayerViewV4bodyQrvg",
+                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV4bodyQrvg",
+                "moduleName": "UnityVideoPlugin",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16UnityVideoPlugin0B10PlayerViewV",
+        "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ActivityIndicator",
+        "printedName": "ActivityIndicator",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isAnimating",
+            "printedName": "isAnimating",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin17ActivityIndicatorV11isAnimatingSbvp",
+            "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV11isAnimatingSbvp",
+            "moduleName": "UnityVideoPlugin",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "ProjectedValueProperty",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin17ActivityIndicatorV11isAnimatingSbvg",
+                "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV11isAnimatingSbvg",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin17ActivityIndicatorV11isAnimatingSbvs",
+                "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV11isAnimatingSbvs",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin17ActivityIndicatorV11isAnimatingSbvM",
+                "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV11isAnimatingSbvM",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$isAnimating",
+            "printedName": "$isAnimating",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:7SwiftUI7BindingV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin17ActivityIndicatorV12$isAnimating7SwiftUI7BindingVySbGvp",
+            "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV12$isAnimating7SwiftUI7BindingVySbGvp",
+            "moduleName": "UnityVideoPlugin",
+            "implicit": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Binding",
+                    "printedName": "SwiftUI.Binding<Swift.Bool>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI7BindingV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin17ActivityIndicatorV12$isAnimating7SwiftUI7BindingVySbGvg",
+                "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV12$isAnimating7SwiftUI7BindingVySbGvg",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_isAnimating",
+            "printedName": "_isAnimating",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:7SwiftUI7BindingV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin17ActivityIndicatorV12_isAnimating33_FFB3493FAF2F10C4B607258E17A73330LL7SwiftUI7BindingVySbGvp",
+            "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV12_isAnimating33_FFB3493FAF2F10C4B607258E17A73330LL7SwiftUI7BindingVySbGvp",
+            "moduleName": "UnityVideoPlugin",
+            "implicit": true,
+            "isInternal": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "style",
+            "printedName": "style",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Style",
+                "printedName": "UIKit.UIActivityIndicatorView.Style",
+                "usr": "c:@E@UIActivityIndicatorViewStyle"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin17ActivityIndicatorV5styleSo010UIActivityE9ViewStyleVvp",
+            "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV5styleSo010UIActivityE9ViewStyleVvp",
+            "moduleName": "UnityVideoPlugin",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Style",
+                    "printedName": "UIKit.UIActivityIndicatorView.Style",
+                    "usr": "c:@E@UIActivityIndicatorViewStyle"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin17ActivityIndicatorV5styleSo010UIActivityE9ViewStyleVvg",
+                "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV5styleSo010UIActivityE9ViewStyleVvg",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "makeUIView",
+            "printedName": "makeUIView(context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIActivityIndicatorView",
+                "printedName": "UIKit.UIActivityIndicatorView",
+                "usr": "c:objc(cs)UIActivityIndicatorView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewRepresentableContext",
+                "printedName": "SwiftUI.UIViewRepresentableContext<UnityVideoPlugin.ActivityIndicator>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ActivityIndicator",
+                    "printedName": "UnityVideoPlugin.ActivityIndicator",
+                    "usr": "s:16UnityVideoPlugin17ActivityIndicatorV"
+                  }
+                ],
+                "usr": "s:7SwiftUI26UIViewRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UnityVideoPlugin17ActivityIndicatorV10makeUIView7contextSo010UIActivityE4ViewC7SwiftUI0G20RepresentableContextVyACG_tF",
+            "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV10makeUIView7contextSo010UIActivityE4ViewC7SwiftUI0G20RepresentableContextVyACG_tF",
+            "moduleName": "UnityVideoPlugin",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateUIView",
+            "printedName": "updateUIView(_:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIActivityIndicatorView",
+                "printedName": "UIKit.UIActivityIndicatorView",
+                "usr": "c:objc(cs)UIActivityIndicatorView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewRepresentableContext",
+                "printedName": "SwiftUI.UIViewRepresentableContext<UnityVideoPlugin.ActivityIndicator>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ActivityIndicator",
+                    "printedName": "UnityVideoPlugin.ActivityIndicator",
+                    "usr": "s:16UnityVideoPlugin17ActivityIndicatorV"
+                  }
+                ],
+                "usr": "s:7SwiftUI26UIViewRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UnityVideoPlugin17ActivityIndicatorV12updateUIView_7contextySo010UIActivityE4ViewC_7SwiftUI0G20RepresentableContextVyACGtF",
+            "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV12updateUIView_7contextySo010UIActivityE4ViewC_7SwiftUI0G20RepresentableContextVyACGtF",
+            "moduleName": "UnityVideoPlugin",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(isAnimating:style:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ActivityIndicator",
+                "printedName": "UnityVideoPlugin.ActivityIndicator",
+                "usr": "s:16UnityVideoPlugin17ActivityIndicatorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:7SwiftUI7BindingV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Style",
+                "printedName": "UIKit.UIActivityIndicatorView.Style",
+                "usr": "c:@E@UIActivityIndicatorViewStyle"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16UnityVideoPlugin17ActivityIndicatorV11isAnimating5styleAC7SwiftUI7BindingVySbG_So010UIActivityE9ViewStyleVtcfc",
+            "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV11isAnimating5styleAC7SwiftUI7BindingVySbG_So010UIActivityE9ViewStyleVtcfc",
+            "moduleName": "UnityVideoPlugin",
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16UnityVideoPlugin17ActivityIndicatorV",
+        "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UIViewRepresentable",
+            "printedName": "UIViewRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UIViewType",
+                "printedName": "UIViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIActivityIndicatorView",
+                    "printedName": "UIKit.UIActivityIndicatorView",
+                    "usr": "c:objc(cs)UIActivityIndicatorView"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Coordinator",
+                "printedName": "Coordinator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI19UIViewRepresentableP",
+            "mangledName": "$s7SwiftUI19UIViewRepresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PlayerView",
+        "printedName": "PlayerView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "urls",
+            "printedName": "urls",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin10PlayerViewV4urlsSaySSGvp",
+            "mangledName": "$s16UnityVideoPlugin10PlayerViewV4urlsSaySSGvp",
+            "moduleName": "UnityVideoPlugin",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin10PlayerViewV4urlsSaySSGvg",
+                "mangledName": "$s16UnityVideoPlugin10PlayerViewV4urlsSaySSGvg",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin10PlayerViewV4urlsSaySSGvs",
+                "mangledName": "$s16UnityVideoPlugin10PlayerViewV4urlsSaySSGvs",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin10PlayerViewV4urlsSaySSGvM",
+                "mangledName": "$s16UnityVideoPlugin10PlayerViewV4urlsSaySSGvM",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "videoPlayerService",
+            "printedName": "videoPlayerService",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VideoPlayerService",
+                "printedName": "UnityVideoPlugin.VideoPlayerService",
+                "usr": "s:16UnityVideoPlugin0B13PlayerServiceC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin10PlayerViewV05videoD7ServiceAA0bdG0Cvp",
+            "mangledName": "$s16UnityVideoPlugin10PlayerViewV05videoD7ServiceAA0bdG0Cvp",
+            "moduleName": "UnityVideoPlugin",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoPlayerService",
+                    "printedName": "UnityVideoPlugin.VideoPlayerService",
+                    "usr": "s:16UnityVideoPlugin0B13PlayerServiceC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin10PlayerViewV05videoD7ServiceAA0bdG0Cvg",
+                "mangledName": "$s16UnityVideoPlugin10PlayerViewV05videoD7ServiceAA0bdG0Cvg",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin10PlayerViewV4bodyQrvp",
+            "mangledName": "$s16UnityVideoPlugin10PlayerViewV4bodyQrvp",
+            "moduleName": "UnityVideoPlugin",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin10PlayerViewV4bodyQrvg",
+                "mangledName": "$s16UnityVideoPlugin10PlayerViewV4bodyQrvg",
+                "moduleName": "UnityVideoPlugin",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(urls:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PlayerView",
+                "printedName": "UnityVideoPlugin.PlayerView",
+                "usr": "s:16UnityVideoPlugin10PlayerViewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16UnityVideoPlugin10PlayerViewV4urlsACSaySSG_tcfc",
+            "mangledName": "$s16UnityVideoPlugin10PlayerViewV4urlsACSaySSG_tcfc",
+            "moduleName": "UnityVideoPlugin",
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PlayerView",
+                "printedName": "UnityVideoPlugin.PlayerView",
+                "usr": "s:16UnityVideoPlugin10PlayerViewV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16UnityVideoPlugin10PlayerViewVACycfc",
+            "mangledName": "$s16UnityVideoPlugin10PlayerViewVACycfc",
+            "moduleName": "UnityVideoPlugin",
+            "implicit": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16UnityVideoPlugin10PlayerViewV",
+        "mangledName": "$s16UnityVideoPlugin10PlayerViewV",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -6175,218 +7519,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "UnityVideoPlugin"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "DissabledViewModifier",
-        "printedName": "DissabledViewModifier",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "isDisable",
-            "printedName": "isDisable",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16UnityVideoPlugin21DissabledViewModifierV9isDisableSbvp",
-            "mangledName": "$s16UnityVideoPlugin21DissabledViewModifierV9isDisableSbvp",
-            "moduleName": "UnityVideoPlugin",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "HasStorage"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin21DissabledViewModifierV9isDisableSbvg",
-                "mangledName": "$s16UnityVideoPlugin21DissabledViewModifierV9isDisableSbvg",
-                "moduleName": "UnityVideoPlugin",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "body",
-            "printedName": "body(content:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "_ViewModifier_Content",
-                "printedName": "SwiftUI._ViewModifier_Content<UnityVideoPlugin.DissabledViewModifier>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DissabledViewModifier",
-                    "printedName": "UnityVideoPlugin.DissabledViewModifier",
-                    "usr": "s:16UnityVideoPlugin21DissabledViewModifierV"
-                  }
-                ],
-                "usr": "s:7SwiftUI21_ViewModifier_ContentV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16UnityVideoPlugin21DissabledViewModifierV4body7contentQr7SwiftUI01_eF8_ContentVyACG_tF",
-            "mangledName": "$s16UnityVideoPlugin21DissabledViewModifierV4body7contentQr7SwiftUI01_eF8_ContentVyACG_tF",
-            "moduleName": "UnityVideoPlugin",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(isDisable:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DissabledViewModifier",
-                "printedName": "UnityVideoPlugin.DissabledViewModifier",
-                "usr": "s:16UnityVideoPlugin21DissabledViewModifierV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16UnityVideoPlugin21DissabledViewModifierV9isDisableACSb_tcfc",
-            "mangledName": "$s16UnityVideoPlugin21DissabledViewModifierV9isDisableACSb_tcfc",
-            "moduleName": "UnityVideoPlugin",
-            "implicit": true,
-            "declAttributes": [
-              "Nonisolated"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:16UnityVideoPlugin21DissabledViewModifierV",
-        "mangledName": "$s16UnityVideoPlugin21DissabledViewModifierV",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ViewModifier",
-            "printedName": "ViewModifier",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI12ViewModifierP",
-            "mangledName": "$s7SwiftUI12ViewModifierP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -6396,189 +7528,735 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "HiddenViewModifier",
-        "printedName": "HiddenViewModifier",
+        "kind": "Var",
+        "name": "currentVideoPlayerService",
+        "printedName": "currentVideoPlayerService",
         "children": [
           {
-            "kind": "Var",
-            "name": "isHidden",
-            "printedName": "isHidden",
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "UnityVideoPlugin.VideoPlayerService?",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "VideoPlayerService",
+                "printedName": "UnityVideoPlugin.VideoPlayerService",
+                "usr": "s:16UnityVideoPlugin0B13PlayerServiceC"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:16UnityVideoPlugin18HiddenViewModifierV02isD0Sbvp",
-            "mangledName": "$s16UnityVideoPlugin18HiddenViewModifierV02isD0Sbvp",
-            "moduleName": "UnityVideoPlugin",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "HasStorage"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin18HiddenViewModifierV02isD0Sbvg",
-                "mangledName": "$s16UnityVideoPlugin18HiddenViewModifierV02isD0Sbvg",
-                "moduleName": "UnityVideoPlugin",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "body",
-            "printedName": "body(content:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "_ViewModifier_Content",
-                "printedName": "SwiftUI._ViewModifier_Content<UnityVideoPlugin.HiddenViewModifier>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "HiddenViewModifier",
-                    "printedName": "UnityVideoPlugin.HiddenViewModifier",
-                    "usr": "s:16UnityVideoPlugin18HiddenViewModifierV"
-                  }
-                ],
-                "usr": "s:7SwiftUI21_ViewModifier_ContentV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16UnityVideoPlugin18HiddenViewModifierV4body7contentQr7SwiftUI01_eF8_ContentVyACG_tF",
-            "mangledName": "$s16UnityVideoPlugin18HiddenViewModifierV4body7contentQr7SwiftUI01_eF8_ContentVyACG_tF",
-            "moduleName": "UnityVideoPlugin",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(isHidden:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "HiddenViewModifier",
-                "printedName": "UnityVideoPlugin.HiddenViewModifier",
-                "usr": "s:16UnityVideoPlugin18HiddenViewModifierV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16UnityVideoPlugin18HiddenViewModifierV02isD0ACSb_tcfc",
-            "mangledName": "$s16UnityVideoPlugin18HiddenViewModifierV02isD0ACSb_tcfc",
-            "moduleName": "UnityVideoPlugin",
-            "implicit": true,
-            "declAttributes": [
-              "Nonisolated"
-            ],
-            "init_kind": "Designated"
+            "usr": "s:Sq"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:16UnityVideoPlugin18HiddenViewModifierV",
-        "mangledName": "$s16UnityVideoPlugin18HiddenViewModifierV",
+        "declKind": "Var",
+        "usr": "s:16UnityVideoPlugin07currentB13PlayerServiceAA0beF0CSgvp",
+        "mangledName": "$s16UnityVideoPlugin07currentB13PlayerServiceAA0beF0CSgvp",
         "moduleName": "UnityVideoPlugin",
         "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl"
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl",
+          "RawDocComment"
         ],
-        "conformances": [
+        "hasStorage": true,
+        "accessors": [
           {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ViewModifier",
-            "printedName": "ViewModifier",
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
             "children": [
               {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UnityVideoPlugin.VideoPlayerService?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
+                    "name": "VideoPlayerService",
+                    "printedName": "UnityVideoPlugin.VideoPlayerService",
+                    "usr": "s:16UnityVideoPlugin0B13PlayerServiceC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:16UnityVideoPlugin07currentB13PlayerServiceAA0beF0CSgvg",
+            "mangledName": "$s16UnityVideoPlugin07currentB13PlayerServiceAA0beF0CSgvg",
+            "moduleName": "UnityVideoPlugin",
+            "implicit": true,
+            "accessorKind": "get"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Set",
+            "printedName": "Set()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UnityVideoPlugin.VideoPlayerService?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoPlayerService",
+                    "printedName": "UnityVideoPlugin.VideoPlayerService",
+                    "usr": "s:16UnityVideoPlugin0B13PlayerServiceC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:16UnityVideoPlugin07currentB13PlayerServiceAA0beF0CSgvs",
+            "mangledName": "$s16UnityVideoPlugin07currentB13PlayerServiceAA0beF0CSgvs",
+            "moduleName": "UnityVideoPlugin",
+            "implicit": true,
+            "accessorKind": "set"
+          },
+          {
+            "kind": "Accessor",
+            "name": "Modify",
+            "printedName": "Modify()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:16UnityVideoPlugin07currentB13PlayerServiceAA0beF0CSgvM",
+            "mangledName": "$s16UnityVideoPlugin07currentB13PlayerServiceAA0beF0CSgvM",
+            "moduleName": "UnityVideoPlugin",
+            "implicit": true,
+            "accessorKind": "_modify"
+          }
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "loadVideo",
+        "printedName": "loadVideo(urlString:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "UnsafePointer",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int8",
+                "printedName": "Swift.Int8",
+                "usr": "s:s4Int8V"
+              }
+            ],
+            "usr": "s:SP"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)loadVideoWithUrlString:",
+        "mangledName": "$s16UnityVideoPlugin04loadB09urlStringySPys4Int8VG_tF",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "play",
+        "printedName": "play()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)play",
+        "mangledName": "$s16UnityVideoPlugin4playyyF",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "pause",
+        "printedName": "pause()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)pause",
+        "mangledName": "$s16UnityVideoPlugin5pauseyyF",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "stop",
+        "printedName": "stop()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)stop",
+        "mangledName": "$s16UnityVideoPlugin4stopyyF",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "seekForward",
+        "printedName": "seekForward(seconds:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Double",
+            "printedName": "Swift.Double",
+            "usr": "s:Sd"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)seekForwardWithSeconds:",
+        "mangledName": "$s16UnityVideoPlugin11seekForward7secondsySd_tF",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "seekBackward",
+        "printedName": "seekBackward(seconds:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Double",
+            "printedName": "Swift.Double",
+            "usr": "s:Sd"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)seekBackwardWithSeconds:",
+        "mangledName": "$s16UnityVideoPlugin12seekBackward7secondsySd_tF",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "seekTo",
+        "printedName": "seekTo(value:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Double",
+            "printedName": "Swift.Double",
+            "usr": "s:Sd"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)seekToValue:",
+        "mangledName": "$s16UnityVideoPlugin6seekTo5valueySd_tF",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "cleanup",
+        "printedName": "cleanup()",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)cleanup",
+        "mangledName": "$s16UnityVideoPlugin7cleanupyyF",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "setURLS",
+        "printedName": "setURLS(_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "UnsafePointer",
+            "printedName": "Swift.UnsafePointer<Swift.UnsafePointer<Swift.Int8>?>",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafePointer",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
+                        "name": "Int8",
+                        "printedName": "Swift.Int8",
+                        "usr": "s:s4Int8V"
                       }
-                    ]
+                    ],
+                    "usr": "s:SP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "usr": "s:SP"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int32",
+            "printedName": "Swift.Int32",
+            "usr": "s:s5Int32V"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)setURLS::",
+        "mangledName": "$s16UnityVideoPlugin7setURLSyySPySPys4Int8VGSgG_s5Int32VtF",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "setShowForwardButton",
+        "printedName": "setShowForwardButton(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)setShowForwardButton:",
+        "mangledName": "$s16UnityVideoPlugin20setShowForwardButtonyySbF",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "setShowBackwordButton",
+        "printedName": "setShowBackwordButton(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)setShowBackwordButton:",
+        "mangledName": "$s16UnityVideoPlugin21setShowBackwordButtonyySbF",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "setShowBack10Button",
+        "printedName": "setShowBack10Button(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)setShowBack10Button:",
+        "mangledName": "$s16UnityVideoPlugin19setShowBack10ButtonyySbF",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "setShowFor10Button",
+        "printedName": "setShowFor10Button(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)setShowFor10Button:",
+        "mangledName": "$s16UnityVideoPlugin18setShowFor10ButtonyySbF",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "setShowPlayPauseButton",
+        "printedName": "setShowPlayPauseButton(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)setShowPlayPauseButton:",
+        "mangledName": "$s16UnityVideoPlugin22setShowPlayPauseButtonyySbF",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "setShowBackButton",
+        "printedName": "setShowBackButton(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)setShowBackButton:",
+        "mangledName": "$s16UnityVideoPlugin17setShowBackButtonyySbF",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "setShowLogo",
+        "printedName": "setShowLogo(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)setShowLogo:",
+        "mangledName": "$s16UnityVideoPlugin11setShowLogoyySbF",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "setShowSeekbar",
+        "printedName": "setShowSeekbar(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)setShowSeekbar:",
+        "mangledName": "$s16UnityVideoPlugin14setShowSeekbaryySbF",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "setShowTimeDuration",
+        "printedName": "setShowTimeDuration(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)setShowTimeDuration:",
+        "mangledName": "$s16UnityVideoPlugin19setShowTimeDurationyySbF",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Var",
+        "name": "unityCallback",
+        "printedName": "unityCallback",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "((Swift.UnsafePointer<Swift.Int8>) -> ())?",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.UnsafePointer<Swift.Int8>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafePointer",
+                    "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int8",
+                        "printedName": "Swift.Int8",
+                        "usr": "s:s4Int8V"
+                      }
+                    ],
+                    "usr": "s:SP"
                   }
                 ]
               }
             ],
-            "usr": "s:7SwiftUI12ViewModifierP",
-            "mangledName": "$s7SwiftUI12ViewModifierP"
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:16UnityVideoPlugin13unityCallbackySPys4Int8VGXCSgvp",
+        "mangledName": "$s16UnityVideoPlugin13unityCallbackySPys4Int8VGXCSgvp",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage"
+        ],
+        "hasStorage": true
+      },
+      {
+        "kind": "Function",
+        "name": "registerUnityCallback",
+        "printedName": "registerUnityCallback(callback:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
           },
           {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(Swift.UnsafePointer<Swift.Int8>) -> ()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ]
           }
-        ]
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)registerUnityCallbackWithCallback:",
+        "mangledName": "$s16UnityVideoPlugin08registerA8Callback8callbackyySPys4Int8VGXC_tF",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "sendUnityCallback",
+        "printedName": "sendUnityCallback(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:16UnityVideoPlugin04sendA8CallbackyySSF",
+        "mangledName": "$s16UnityVideoPlugin04sendA8CallbackyySSF",
+        "moduleName": "UnityVideoPlugin",
+        "funcSelfKind": "NonMutating"
       },
       {
         "kind": "Import",
@@ -7440,12 +9118,399 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnityVideoPlugin"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DissabledViewModifier",
+        "printedName": "DissabledViewModifier",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isDisable",
+            "printedName": "isDisable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin21DissabledViewModifierV9isDisableSbvp",
+            "mangledName": "$s16UnityVideoPlugin21DissabledViewModifierV9isDisableSbvp",
+            "moduleName": "UnityVideoPlugin",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin21DissabledViewModifierV9isDisableSbvg",
+                "mangledName": "$s16UnityVideoPlugin21DissabledViewModifierV9isDisableSbvg",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "body",
+            "printedName": "body(content:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "_ViewModifier_Content",
+                "printedName": "SwiftUI._ViewModifier_Content<UnityVideoPlugin.DissabledViewModifier>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DissabledViewModifier",
+                    "printedName": "UnityVideoPlugin.DissabledViewModifier",
+                    "usr": "s:16UnityVideoPlugin21DissabledViewModifierV"
+                  }
+                ],
+                "usr": "s:7SwiftUI21_ViewModifier_ContentV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UnityVideoPlugin21DissabledViewModifierV4body7contentQr7SwiftUI01_eF8_ContentVyACG_tF",
+            "mangledName": "$s16UnityVideoPlugin21DissabledViewModifierV4body7contentQr7SwiftUI01_eF8_ContentVyACG_tF",
+            "moduleName": "UnityVideoPlugin",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(isDisable:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DissabledViewModifier",
+                "printedName": "UnityVideoPlugin.DissabledViewModifier",
+                "usr": "s:16UnityVideoPlugin21DissabledViewModifierV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16UnityVideoPlugin21DissabledViewModifierV9isDisableACSb_tcfc",
+            "mangledName": "$s16UnityVideoPlugin21DissabledViewModifierV9isDisableACSb_tcfc",
+            "moduleName": "UnityVideoPlugin",
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16UnityVideoPlugin21DissabledViewModifierV",
+        "mangledName": "$s16UnityVideoPlugin21DissabledViewModifierV",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ViewModifier",
+            "printedName": "ViewModifier",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI12ViewModifierP",
+            "mangledName": "$s7SwiftUI12ViewModifierP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "UnityVideoPlugin",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HiddenViewModifier",
+        "printedName": "HiddenViewModifier",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isHidden",
+            "printedName": "isHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin18HiddenViewModifierV02isD0Sbvp",
+            "mangledName": "$s16UnityVideoPlugin18HiddenViewModifierV02isD0Sbvp",
+            "moduleName": "UnityVideoPlugin",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin18HiddenViewModifierV02isD0Sbvg",
+                "mangledName": "$s16UnityVideoPlugin18HiddenViewModifierV02isD0Sbvg",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "body",
+            "printedName": "body(content:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "_ViewModifier_Content",
+                "printedName": "SwiftUI._ViewModifier_Content<UnityVideoPlugin.HiddenViewModifier>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HiddenViewModifier",
+                    "printedName": "UnityVideoPlugin.HiddenViewModifier",
+                    "usr": "s:16UnityVideoPlugin18HiddenViewModifierV"
+                  }
+                ],
+                "usr": "s:7SwiftUI21_ViewModifier_ContentV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UnityVideoPlugin18HiddenViewModifierV4body7contentQr7SwiftUI01_eF8_ContentVyACG_tF",
+            "mangledName": "$s16UnityVideoPlugin18HiddenViewModifierV4body7contentQr7SwiftUI01_eF8_ContentVyACG_tF",
+            "moduleName": "UnityVideoPlugin",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(isHidden:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HiddenViewModifier",
+                "printedName": "UnityVideoPlugin.HiddenViewModifier",
+                "usr": "s:16UnityVideoPlugin18HiddenViewModifierV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16UnityVideoPlugin18HiddenViewModifierV02isD0ACSb_tcfc",
+            "mangledName": "$s16UnityVideoPlugin18HiddenViewModifierV02isD0ACSb_tcfc",
+            "moduleName": "UnityVideoPlugin",
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16UnityVideoPlugin18HiddenViewModifierV",
+        "mangledName": "$s16UnityVideoPlugin18HiddenViewModifierV",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ViewModifier",
+            "printedName": "ViewModifier",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI12ViewModifierP",
+            "mangledName": "$s7SwiftUI12ViewModifierP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
         ]
       },
       {
@@ -7750,2071 +9815,6 @@
             "mangledName": "$ss8SendableP"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "UnityVideoPlugin"
-      },
-      {
-        "kind": "Import",
-        "name": "AVKit",
-        "printedName": "AVKit",
-        "declKind": "Import",
-        "moduleName": "UnityVideoPlugin"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "VideoPlayerView",
-        "printedName": "VideoPlayerView",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "playerController",
-            "printedName": "playerController",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PlayerController",
-                "printedName": "UnityVideoPlugin.PlayerController",
-                "usr": "c:@M@UnityVideoPlugin@objc(cs)PlayerController"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16UnityVideoPlugin0B10PlayerViewV16playerControllerAA0dG0Cvp",
-            "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV16playerControllerAA0dG0Cvp",
-            "moduleName": "UnityVideoPlugin",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "ProjectedValueProperty",
-              "AccessControl",
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PlayerController",
-                    "printedName": "UnityVideoPlugin.PlayerController",
-                    "usr": "c:@M@UnityVideoPlugin@objc(cs)PlayerController"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin0B10PlayerViewV16playerControllerAA0dG0Cvg",
-                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV16playerControllerAA0dG0Cvg",
-                "moduleName": "UnityVideoPlugin",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PlayerController",
-                    "printedName": "UnityVideoPlugin.PlayerController",
-                    "usr": "c:@M@UnityVideoPlugin@objc(cs)PlayerController"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin0B10PlayerViewV16playerControllerAA0dG0Cvs",
-                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV16playerControllerAA0dG0Cvs",
-                "moduleName": "UnityVideoPlugin",
-                "implicit": true,
-                "intro_Macosx": "10.15",
-                "intro_iOS": "13.0",
-                "intro_tvOS": "13.0",
-                "intro_watchOS": "6.0",
-                "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin0B10PlayerViewV16playerControllerAA0dG0CvM",
-                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV16playerControllerAA0dG0CvM",
-                "moduleName": "UnityVideoPlugin",
-                "implicit": true,
-                "intro_Macosx": "10.15",
-                "intro_iOS": "13.0",
-                "intro_tvOS": "13.0",
-                "intro_watchOS": "6.0",
-                "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "$playerController",
-            "printedName": "$playerController",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Wrapper",
-                "printedName": "SwiftUI.ObservedObject<UnityVideoPlugin.PlayerController>.Wrapper",
-                "usr": "s:7SwiftUI14ObservedObjectV7WrapperV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16UnityVideoPlugin0B10PlayerViewV17$playerController7SwiftUI14ObservedObjectV7WrapperVyAA0dG0C_Gvp",
-            "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV17$playerController7SwiftUI14ObservedObjectV7WrapperVyAA0dG0C_Gvp",
-            "moduleName": "UnityVideoPlugin",
-            "implicit": true,
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Wrapper",
-                    "printedName": "SwiftUI.ObservedObject<UnityVideoPlugin.PlayerController>.Wrapper",
-                    "usr": "s:7SwiftUI14ObservedObjectV7WrapperV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin0B10PlayerViewV17$playerController7SwiftUI14ObservedObjectV7WrapperVyAA0dG0C_Gvg",
-                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV17$playerController7SwiftUI14ObservedObjectV7WrapperVyAA0dG0C_Gvg",
-                "moduleName": "UnityVideoPlugin",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "orientationObserver",
-            "printedName": "orientationObserver",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OrientationObserver",
-                "printedName": "UnityVideoPlugin.OrientationObserver",
-                "usr": "s:16UnityVideoPlugin19OrientationObserverC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16UnityVideoPlugin0B10PlayerViewV19orientationObserverAA011OrientationG0Cvp",
-            "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV19orientationObserverAA011OrientationG0Cvp",
-            "moduleName": "UnityVideoPlugin",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "ProjectedValueProperty",
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OrientationObserver",
-                    "printedName": "UnityVideoPlugin.OrientationObserver",
-                    "usr": "s:16UnityVideoPlugin19OrientationObserverC"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin0B10PlayerViewV19orientationObserverAA011OrientationG0Cvg",
-                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV19orientationObserverAA011OrientationG0Cvg",
-                "moduleName": "UnityVideoPlugin",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OrientationObserver",
-                    "printedName": "UnityVideoPlugin.OrientationObserver",
-                    "usr": "s:16UnityVideoPlugin19OrientationObserverC"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin0B10PlayerViewV19orientationObserverAA011OrientationG0Cvs",
-                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV19orientationObserverAA011OrientationG0Cvs",
-                "moduleName": "UnityVideoPlugin",
-                "implicit": true,
-                "intro_Macosx": "10.15",
-                "intro_iOS": "13.0",
-                "intro_tvOS": "13.0",
-                "intro_watchOS": "6.0",
-                "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin0B10PlayerViewV19orientationObserverAA011OrientationG0CvM",
-                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV19orientationObserverAA011OrientationG0CvM",
-                "moduleName": "UnityVideoPlugin",
-                "implicit": true,
-                "intro_Macosx": "10.15",
-                "intro_iOS": "13.0",
-                "intro_tvOS": "13.0",
-                "intro_watchOS": "6.0",
-                "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "$orientationObserver",
-            "printedName": "$orientationObserver",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Wrapper",
-                "printedName": "SwiftUI.ObservedObject<UnityVideoPlugin.OrientationObserver>.Wrapper",
-                "usr": "s:7SwiftUI14ObservedObjectV7WrapperV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16UnityVideoPlugin0B10PlayerViewV20$orientationObserver7SwiftUI14ObservedObjectV7WrapperVyAA011OrientationG0C_Gvp",
-            "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV20$orientationObserver7SwiftUI14ObservedObjectV7WrapperVyAA011OrientationG0C_Gvp",
-            "moduleName": "UnityVideoPlugin",
-            "implicit": true,
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Wrapper",
-                    "printedName": "SwiftUI.ObservedObject<UnityVideoPlugin.OrientationObserver>.Wrapper",
-                    "usr": "s:7SwiftUI14ObservedObjectV7WrapperV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin0B10PlayerViewV20$orientationObserver7SwiftUI14ObservedObjectV7WrapperVyAA011OrientationG0C_Gvg",
-                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV20$orientationObserver7SwiftUI14ObservedObjectV7WrapperVyAA011OrientationG0C_Gvg",
-                "moduleName": "UnityVideoPlugin",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "isRunningOnMac",
-            "printedName": "isRunningOnMac",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16UnityVideoPlugin0B10PlayerViewV14isRunningOnMacSbvp",
-            "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV14isRunningOnMacSbvp",
-            "moduleName": "UnityVideoPlugin",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin0B10PlayerViewV14isRunningOnMacSbvg",
-                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV14isRunningOnMacSbvg",
-                "moduleName": "UnityVideoPlugin",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(playerController:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "VideoPlayerView",
-                "printedName": "UnityVideoPlugin.VideoPlayerView",
-                "usr": "s:16UnityVideoPlugin0B10PlayerViewV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PlayerController",
-                "printedName": "UnityVideoPlugin.PlayerController",
-                "usr": "c:@M@UnityVideoPlugin@objc(cs)PlayerController"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16UnityVideoPlugin0B10PlayerViewV16playerControllerAcA0dG0C_tcfc",
-            "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV16playerControllerAcA0dG0C_tcfc",
-            "moduleName": "UnityVideoPlugin",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16UnityVideoPlugin0B10PlayerViewV4bodyQrvp",
-            "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV4bodyQrvp",
-            "moduleName": "UnityVideoPlugin",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin0B10PlayerViewV4bodyQrvg",
-                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV4bodyQrvg",
-                "moduleName": "UnityVideoPlugin",
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:16UnityVideoPlugin0B10PlayerViewV",
-        "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "ActivityIndicator",
-        "printedName": "ActivityIndicator",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "isAnimating",
-            "printedName": "isAnimating",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16UnityVideoPlugin17ActivityIndicatorV11isAnimatingSbvp",
-            "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV11isAnimatingSbvp",
-            "moduleName": "UnityVideoPlugin",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "ProjectedValueProperty",
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin17ActivityIndicatorV11isAnimatingSbvg",
-                "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV11isAnimatingSbvg",
-                "moduleName": "UnityVideoPlugin",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin17ActivityIndicatorV11isAnimatingSbvs",
-                "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV11isAnimatingSbvs",
-                "moduleName": "UnityVideoPlugin",
-                "implicit": true,
-                "intro_Macosx": "10.15",
-                "intro_iOS": "13.0",
-                "intro_tvOS": "13.0",
-                "intro_watchOS": "6.0",
-                "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin17ActivityIndicatorV11isAnimatingSbvM",
-                "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV11isAnimatingSbvM",
-                "moduleName": "UnityVideoPlugin",
-                "implicit": true,
-                "intro_Macosx": "10.15",
-                "intro_iOS": "13.0",
-                "intro_tvOS": "13.0",
-                "intro_watchOS": "6.0",
-                "declAttributes": [
-                  "Available",
-                  "Available",
-                  "Available",
-                  "Available"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "$isAnimating",
-            "printedName": "$isAnimating",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Binding",
-                "printedName": "SwiftUI.Binding<Swift.Bool>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "usr": "s:7SwiftUI7BindingV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16UnityVideoPlugin17ActivityIndicatorV12$isAnimating7SwiftUI7BindingVySbGvp",
-            "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV12$isAnimating7SwiftUI7BindingVySbGvp",
-            "moduleName": "UnityVideoPlugin",
-            "implicit": true,
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Binding",
-                    "printedName": "SwiftUI.Binding<Swift.Bool>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "usr": "s:7SwiftUI7BindingV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin17ActivityIndicatorV12$isAnimating7SwiftUI7BindingVySbGvg",
-                "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV12$isAnimating7SwiftUI7BindingVySbGvg",
-                "moduleName": "UnityVideoPlugin",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "_isAnimating",
-            "printedName": "_isAnimating",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Binding",
-                "printedName": "SwiftUI.Binding<Swift.Bool>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "usr": "s:7SwiftUI7BindingV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16UnityVideoPlugin17ActivityIndicatorV12_isAnimating33_FFB3493FAF2F10C4B607258E17A73330LL7SwiftUI7BindingVySbGvp",
-            "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV12_isAnimating33_FFB3493FAF2F10C4B607258E17A73330LL7SwiftUI7BindingVySbGvp",
-            "moduleName": "UnityVideoPlugin",
-            "implicit": true,
-            "isInternal": true,
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 0,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
-            "name": "style",
-            "printedName": "style",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Style",
-                "printedName": "UIKit.UIActivityIndicatorView.Style",
-                "usr": "c:@E@UIActivityIndicatorViewStyle"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16UnityVideoPlugin17ActivityIndicatorV5styleSo010UIActivityE9ViewStyleVvp",
-            "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV5styleSo010UIActivityE9ViewStyleVvp",
-            "moduleName": "UnityVideoPlugin",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 1,
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Style",
-                    "printedName": "UIKit.UIActivityIndicatorView.Style",
-                    "usr": "c:@E@UIActivityIndicatorViewStyle"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin17ActivityIndicatorV5styleSo010UIActivityE9ViewStyleVvg",
-                "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV5styleSo010UIActivityE9ViewStyleVvg",
-                "moduleName": "UnityVideoPlugin",
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "makeUIView",
-            "printedName": "makeUIView(context:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIActivityIndicatorView",
-                "printedName": "UIKit.UIActivityIndicatorView",
-                "usr": "c:objc(cs)UIActivityIndicatorView"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewRepresentableContext",
-                "printedName": "SwiftUI.UIViewRepresentableContext<UnityVideoPlugin.ActivityIndicator>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ActivityIndicator",
-                    "printedName": "UnityVideoPlugin.ActivityIndicator",
-                    "usr": "s:16UnityVideoPlugin17ActivityIndicatorV"
-                  }
-                ],
-                "usr": "s:7SwiftUI26UIViewRepresentableContextV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16UnityVideoPlugin17ActivityIndicatorV10makeUIView7contextSo010UIActivityE4ViewC7SwiftUI0G20RepresentableContextVyACG_tF",
-            "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV10makeUIView7contextSo010UIActivityE4ViewC7SwiftUI0G20RepresentableContextVyACG_tF",
-            "moduleName": "UnityVideoPlugin",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "updateUIView",
-            "printedName": "updateUIView(_:context:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIActivityIndicatorView",
-                "printedName": "UIKit.UIActivityIndicatorView",
-                "usr": "c:objc(cs)UIActivityIndicatorView"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewRepresentableContext",
-                "printedName": "SwiftUI.UIViewRepresentableContext<UnityVideoPlugin.ActivityIndicator>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ActivityIndicator",
-                    "printedName": "UnityVideoPlugin.ActivityIndicator",
-                    "usr": "s:16UnityVideoPlugin17ActivityIndicatorV"
-                  }
-                ],
-                "usr": "s:7SwiftUI26UIViewRepresentableContextV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16UnityVideoPlugin17ActivityIndicatorV12updateUIView_7contextySo010UIActivityE4ViewC_7SwiftUI0G20RepresentableContextVyACGtF",
-            "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV12updateUIView_7contextySo010UIActivityE4ViewC_7SwiftUI0G20RepresentableContextVyACGtF",
-            "moduleName": "UnityVideoPlugin",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(isAnimating:style:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ActivityIndicator",
-                "printedName": "UnityVideoPlugin.ActivityIndicator",
-                "usr": "s:16UnityVideoPlugin17ActivityIndicatorV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Binding",
-                "printedName": "SwiftUI.Binding<Swift.Bool>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "usr": "s:7SwiftUI7BindingV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Style",
-                "printedName": "UIKit.UIActivityIndicatorView.Style",
-                "usr": "c:@E@UIActivityIndicatorViewStyle"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16UnityVideoPlugin17ActivityIndicatorV11isAnimating5styleAC7SwiftUI7BindingVySbG_So010UIActivityE9ViewStyleVtcfc",
-            "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV11isAnimating5styleAC7SwiftUI7BindingVySbG_So010UIActivityE9ViewStyleVtcfc",
-            "moduleName": "UnityVideoPlugin",
-            "implicit": true,
-            "declAttributes": [
-              "Nonisolated"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:16UnityVideoPlugin17ActivityIndicatorV",
-        "mangledName": "$s16UnityVideoPlugin17ActivityIndicatorV",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UIViewRepresentable",
-            "printedName": "UIViewRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "UIViewType",
-                "printedName": "UIViewType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIActivityIndicatorView",
-                    "printedName": "UIKit.UIActivityIndicatorView",
-                    "usr": "c:objc(cs)UIActivityIndicatorView"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Coordinator",
-                "printedName": "Coordinator",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI19UIViewRepresentableP",
-            "mangledName": "$s7SwiftUI19UIViewRepresentableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Never",
-                    "printedName": "Swift.Never",
-                    "usr": "s:s5NeverO"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PlayerView",
-        "printedName": "PlayerView",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "urls",
-            "printedName": "urls",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16UnityVideoPlugin10PlayerViewV4urlsSaySSGvp",
-            "mangledName": "$s16UnityVideoPlugin10PlayerViewV4urlsSaySSGvp",
-            "moduleName": "UnityVideoPlugin",
-            "declAttributes": [
-              "HasInitialValue",
-              "Preconcurrency",
-              "Custom",
-              "HasStorage",
-              "RawDocComment"
-            ],
-            "fixedbinaryorder": 0,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin10PlayerViewV4urlsSaySSGvg",
-                "mangledName": "$s16UnityVideoPlugin10PlayerViewV4urlsSaySSGvg",
-                "moduleName": "UnityVideoPlugin",
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin10PlayerViewV4urlsSaySSGvs",
-                "mangledName": "$s16UnityVideoPlugin10PlayerViewV4urlsSaySSGvs",
-                "moduleName": "UnityVideoPlugin",
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin10PlayerViewV4urlsSaySSGvM",
-                "mangledName": "$s16UnityVideoPlugin10PlayerViewV4urlsSaySSGvM",
-                "moduleName": "UnityVideoPlugin",
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "videoPlayerService",
-            "printedName": "videoPlayerService",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "VideoPlayerService",
-                "printedName": "UnityVideoPlugin.VideoPlayerService",
-                "usr": "s:16UnityVideoPlugin0B13PlayerServiceC"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16UnityVideoPlugin10PlayerViewV05videoD7ServiceAA0bdG0Cvp",
-            "mangledName": "$s16UnityVideoPlugin10PlayerViewV05videoD7ServiceAA0bdG0Cvp",
-            "moduleName": "UnityVideoPlugin",
-            "declAttributes": [
-              "HasInitialValue",
-              "Preconcurrency",
-              "Custom",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 1,
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VideoPlayerService",
-                    "printedName": "UnityVideoPlugin.VideoPlayerService",
-                    "usr": "s:16UnityVideoPlugin0B13PlayerServiceC"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin10PlayerViewV05videoD7ServiceAA0bdG0Cvg",
-                "mangledName": "$s16UnityVideoPlugin10PlayerViewV05videoD7ServiceAA0bdG0Cvg",
-                "moduleName": "UnityVideoPlugin",
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16UnityVideoPlugin10PlayerViewV4bodyQrvp",
-            "mangledName": "$s16UnityVideoPlugin10PlayerViewV4bodyQrvp",
-            "moduleName": "UnityVideoPlugin",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin10PlayerViewV4bodyQrvg",
-                "mangledName": "$s16UnityVideoPlugin10PlayerViewV4bodyQrvg",
-                "moduleName": "UnityVideoPlugin",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(urls:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PlayerView",
-                "printedName": "UnityVideoPlugin.PlayerView",
-                "usr": "s:16UnityVideoPlugin10PlayerViewV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16UnityVideoPlugin10PlayerViewV4urlsACSaySSG_tcfc",
-            "mangledName": "$s16UnityVideoPlugin10PlayerViewV4urlsACSaySSG_tcfc",
-            "moduleName": "UnityVideoPlugin",
-            "implicit": true,
-            "declAttributes": [
-              "Nonisolated"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PlayerView",
-                "printedName": "UnityVideoPlugin.PlayerView",
-                "usr": "s:16UnityVideoPlugin10PlayerViewV"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16UnityVideoPlugin10PlayerViewVACycfc",
-            "mangledName": "$s16UnityVideoPlugin10PlayerViewVACycfc",
-            "moduleName": "UnityVideoPlugin",
-            "implicit": true,
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:16UnityVideoPlugin10PlayerViewV",
-        "mangledName": "$s16UnityVideoPlugin10PlayerViewV",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Var",
-        "name": "currentVideoPlayerService",
-        "printedName": "currentVideoPlayerService",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Optional",
-            "printedName": "UnityVideoPlugin.VideoPlayerService?",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "VideoPlayerService",
-                "printedName": "UnityVideoPlugin.VideoPlayerService",
-                "usr": "s:16UnityVideoPlugin0B13PlayerServiceC"
-              }
-            ],
-            "usr": "s:Sq"
-          }
-        ],
-        "declKind": "Var",
-        "usr": "s:16UnityVideoPlugin07currentB13PlayerServiceAA0beF0CSgvp",
-        "mangledName": "$s16UnityVideoPlugin07currentB13PlayerServiceAA0beF0CSgvp",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "HasInitialValue",
-          "HasStorage",
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "hasStorage": true,
-        "accessors": [
-          {
-            "kind": "Accessor",
-            "name": "Get",
-            "printedName": "Get()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UnityVideoPlugin.VideoPlayerService?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VideoPlayerService",
-                    "printedName": "UnityVideoPlugin.VideoPlayerService",
-                    "usr": "s:16UnityVideoPlugin0B13PlayerServiceC"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Accessor",
-            "usr": "s:16UnityVideoPlugin07currentB13PlayerServiceAA0beF0CSgvg",
-            "mangledName": "$s16UnityVideoPlugin07currentB13PlayerServiceAA0beF0CSgvg",
-            "moduleName": "UnityVideoPlugin",
-            "implicit": true,
-            "accessorKind": "get"
-          },
-          {
-            "kind": "Accessor",
-            "name": "Set",
-            "printedName": "Set()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UnityVideoPlugin.VideoPlayerService?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "VideoPlayerService",
-                    "printedName": "UnityVideoPlugin.VideoPlayerService",
-                    "usr": "s:16UnityVideoPlugin0B13PlayerServiceC"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Accessor",
-            "usr": "s:16UnityVideoPlugin07currentB13PlayerServiceAA0beF0CSgvs",
-            "mangledName": "$s16UnityVideoPlugin07currentB13PlayerServiceAA0beF0CSgvs",
-            "moduleName": "UnityVideoPlugin",
-            "implicit": true,
-            "accessorKind": "set"
-          },
-          {
-            "kind": "Accessor",
-            "name": "Modify",
-            "printedName": "Modify()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Accessor",
-            "usr": "s:16UnityVideoPlugin07currentB13PlayerServiceAA0beF0CSgvM",
-            "mangledName": "$s16UnityVideoPlugin07currentB13PlayerServiceAA0beF0CSgvM",
-            "moduleName": "UnityVideoPlugin",
-            "implicit": true,
-            "accessorKind": "_modify"
-          }
-        ]
-      },
-      {
-        "kind": "Function",
-        "name": "loadVideo",
-        "printedName": "loadVideo(urlString:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "UnsafePointer",
-            "printedName": "Swift.UnsafePointer<Swift.Int8>",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int8",
-                "printedName": "Swift.Int8",
-                "usr": "s:s4Int8V"
-              }
-            ],
-            "usr": "s:SP"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)loadVideoWithUrlString:",
-        "mangledName": "$s16UnityVideoPlugin04loadB09urlStringySPys4Int8VG_tF",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "play",
-        "printedName": "play()",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)play",
-        "mangledName": "$s16UnityVideoPlugin4playyyF",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "pause",
-        "printedName": "pause()",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)pause",
-        "mangledName": "$s16UnityVideoPlugin5pauseyyF",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "stop",
-        "printedName": "stop()",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)stop",
-        "mangledName": "$s16UnityVideoPlugin4stopyyF",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "seekForward",
-        "printedName": "seekForward(seconds:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Double",
-            "printedName": "Swift.Double",
-            "usr": "s:Sd"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)seekForwardWithSeconds:",
-        "mangledName": "$s16UnityVideoPlugin11seekForward7secondsySd_tF",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "seekBackward",
-        "printedName": "seekBackward(seconds:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Double",
-            "printedName": "Swift.Double",
-            "usr": "s:Sd"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)seekBackwardWithSeconds:",
-        "mangledName": "$s16UnityVideoPlugin12seekBackward7secondsySd_tF",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "seekTo",
-        "printedName": "seekTo(value:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Double",
-            "printedName": "Swift.Double",
-            "usr": "s:Sd"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)seekToValue:",
-        "mangledName": "$s16UnityVideoPlugin6seekTo5valueySd_tF",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "cleanup",
-        "printedName": "cleanup()",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)cleanup",
-        "mangledName": "$s16UnityVideoPlugin7cleanupyyF",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "setURLS",
-        "printedName": "setURLS(_:_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "UnsafePointer",
-            "printedName": "Swift.UnsafePointer<Swift.UnsafePointer<Swift.Int8>?>",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.UnsafePointer<Swift.Int8>?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UnsafePointer",
-                    "printedName": "Swift.UnsafePointer<Swift.Int8>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int8",
-                        "printedName": "Swift.Int8",
-                        "usr": "s:s4Int8V"
-                      }
-                    ],
-                    "usr": "s:SP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "usr": "s:SP"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Int32",
-            "printedName": "Swift.Int32",
-            "usr": "s:s5Int32V"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)setURLS::",
-        "mangledName": "$s16UnityVideoPlugin7setURLSyySPySPys4Int8VGSgG_s5Int32VtF",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "setShowForwardButton",
-        "printedName": "setShowForwardButton(_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Bool",
-            "printedName": "Swift.Bool",
-            "usr": "s:Sb"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)setShowForwardButton:",
-        "mangledName": "$s16UnityVideoPlugin20setShowForwardButtonyySbF",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "setShowBackwordButton",
-        "printedName": "setShowBackwordButton(_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Bool",
-            "printedName": "Swift.Bool",
-            "usr": "s:Sb"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)setShowBackwordButton:",
-        "mangledName": "$s16UnityVideoPlugin21setShowBackwordButtonyySbF",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "setShowBack10Button",
-        "printedName": "setShowBack10Button(_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Bool",
-            "printedName": "Swift.Bool",
-            "usr": "s:Sb"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)setShowBack10Button:",
-        "mangledName": "$s16UnityVideoPlugin19setShowBack10ButtonyySbF",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "setShowFor10Button",
-        "printedName": "setShowFor10Button(_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Bool",
-            "printedName": "Swift.Bool",
-            "usr": "s:Sb"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)setShowFor10Button:",
-        "mangledName": "$s16UnityVideoPlugin18setShowFor10ButtonyySbF",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "setShowPlayPauseButton",
-        "printedName": "setShowPlayPauseButton(_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Bool",
-            "printedName": "Swift.Bool",
-            "usr": "s:Sb"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)setShowPlayPauseButton:",
-        "mangledName": "$s16UnityVideoPlugin22setShowPlayPauseButtonyySbF",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "setShowBackButton",
-        "printedName": "setShowBackButton(_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Bool",
-            "printedName": "Swift.Bool",
-            "usr": "s:Sb"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)setShowBackButton:",
-        "mangledName": "$s16UnityVideoPlugin17setShowBackButtonyySbF",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "setShowLogo",
-        "printedName": "setShowLogo(_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Bool",
-            "printedName": "Swift.Bool",
-            "usr": "s:Sb"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)setShowLogo:",
-        "mangledName": "$s16UnityVideoPlugin11setShowLogoyySbF",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "setShowSeekbar",
-        "printedName": "setShowSeekbar(_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Bool",
-            "printedName": "Swift.Bool",
-            "usr": "s:Sb"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)setShowSeekbar:",
-        "mangledName": "$s16UnityVideoPlugin14setShowSeekbaryySbF",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "setShowTimeDuration",
-        "printedName": "setShowTimeDuration(_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Bool",
-            "printedName": "Swift.Bool",
-            "usr": "s:Sb"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)setShowTimeDuration:",
-        "mangledName": "$s16UnityVideoPlugin19setShowTimeDurationyySbF",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Var",
-        "name": "unityCallback",
-        "printedName": "unityCallback",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Optional",
-            "printedName": "((Swift.UnsafePointer<Swift.Int8>) -> ())?",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.UnsafePointer<Swift.Int8>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UnsafePointer",
-                    "printedName": "Swift.UnsafePointer<Swift.Int8>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int8",
-                        "printedName": "Swift.Int8",
-                        "usr": "s:s4Int8V"
-                      }
-                    ],
-                    "usr": "s:SP"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:Sq"
-          }
-        ],
-        "declKind": "Var",
-        "usr": "s:16UnityVideoPlugin13unityCallbackySPys4Int8VGXCSgvp",
-        "mangledName": "$s16UnityVideoPlugin13unityCallbackySPys4Int8VGXCSgvp",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "HasInitialValue",
-          "HasStorage"
-        ],
-        "hasStorage": true
-      },
-      {
-        "kind": "Function",
-        "name": "registerUnityCallback",
-        "printedName": "registerUnityCallback(callback:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeFunc",
-            "name": "Function",
-            "printedName": "(Swift.UnsafePointer<Swift.Int8>) -> ()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UnsafePointer",
-                "printedName": "Swift.UnsafePointer<Swift.Int8>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int8",
-                    "printedName": "Swift.Int8",
-                    "usr": "s:s4Int8V"
-                  }
-                ],
-                "usr": "s:SP"
-              }
-            ]
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)registerUnityCallbackWithCallback:",
-        "mangledName": "$s16UnityVideoPlugin08registerA8Callback8callbackyySPys4Int8VGXC_tF",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "sendUnityCallback",
-        "printedName": "sendUnityCallback(_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "String",
-            "printedName": "Swift.String",
-            "usr": "s:SS"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "s:16UnityVideoPlugin04sendA8CallbackyySSF",
-        "mangledName": "$s16UnityVideoPlugin04sendA8CallbackyySSF",
-        "moduleName": "UnityVideoPlugin",
-        "funcSelfKind": "NonMutating"
       },
       {
         "kind": "Import",
@@ -10882,6 +10882,132 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "UIApplication",
+        "printedName": "UIApplication",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "topMostViewController",
+            "printedName": "topMostViewController()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So13UIApplicationC16UnityVideoPluginE21topMostViewControllerSo06UIViewH0CSgyF",
+            "mangledName": "$sSo13UIApplicationC16UnityVideoPluginE21topMostViewControllerSo06UIViewH0CSgyF",
+            "moduleName": "UnityVideoPlugin",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIApplication",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIApplication",
+        "declAttributes": [
+          "Preconcurrency",
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIResponder",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "UIImage",
         "printedName": "UIImage",
         "children": [
@@ -11574,34 +11700,79 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "UIApplication",
-        "printedName": "UIApplication",
+        "name": "View",
+        "printedName": "View",
         "children": [
           {
             "kind": "Function",
-            "name": "topMostViewController",
-            "printedName": "topMostViewController()",
+            "name": "isHidden",
+            "printedName": "isHidden(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIViewController?",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "UIViewController",
-                    "printedName": "UIKit.UIViewController",
-                    "usr": "c:objc(cs)UIViewController"
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
                   }
-                ],
-                "usr": "s:Sq"
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:So13UIApplicationC16UnityVideoPluginE21topMostViewControllerSo06UIViewH0CSgyF",
-            "mangledName": "$sSo13UIApplicationC16UnityVideoPluginE21topMostViewControllerSo06UIViewH0CSgyF",
+            "usr": "s:7SwiftUI4ViewP16UnityVideoPluginE8isHiddenyQrSbF",
+            "mangledName": "$s7SwiftUI4ViewP16UnityVideoPluginE8isHiddenyQrSbF",
             "moduleName": "UnityVideoPlugin",
-            "isOpen": true,
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Self where Self : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isDisabled",
+            "printedName": "isDisabled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SwiftUI4ViewP16UnityVideoPluginE10isDisabledyQrSbF",
+            "mangledName": "$s7SwiftUI4ViewP16UnityVideoPluginE10isDisabledyQrSbF",
+            "moduleName": "UnityVideoPlugin",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Self where Self : SwiftUI.View>",
             "declAttributes": [
               "Preconcurrency",
               "Custom",
@@ -11611,35 +11782,31 @@
             "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)UIApplication",
-        "moduleName": "UIKit",
-        "isOpen": true,
-        "intro_iOS": "2.0",
-        "objc_name": "UIApplication",
+        "declKind": "Protocol",
+        "usr": "s:7SwiftUI4ViewP",
+        "mangledName": "$s7SwiftUI4ViewP",
+        "moduleName": "SwiftUICore",
+        "genericSig": "<τ_0_0.Body : SwiftUI.View>",
+        "sugared_genericSig": "<Self.Body : SwiftUI.View>",
+        "intro_Macosx": "10.15",
+        "intro_iOS": "13.0",
+        "intro_tvOS": "13.0",
+        "intro_watchOS": "6.0",
         "declAttributes": [
           "Preconcurrency",
+          "TypeEraser",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
           "Available",
-          "ObjC",
-          "NonSendable",
-          "Custom",
-          "Dynamic"
+          "Available",
+          "Available",
+          "Available",
+          "Custom"
         ],
-        "superclassUsr": "c:objc(cs)UIResponder",
         "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
           {
             "kind": "Conformance",
             "name": "Escapable",
@@ -11649,52 +11816,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           }
         ]
       },
@@ -11853,131 +11978,6 @@
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "View",
-        "printedName": "View",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "isHidden",
-            "printedName": "isHidden(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7SwiftUI4ViewP16UnityVideoPluginE8isHiddenyQrSbF",
-            "mangledName": "$s7SwiftUI4ViewP16UnityVideoPluginE8isHiddenyQrSbF",
-            "moduleName": "UnityVideoPlugin",
-            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-            "sugared_genericSig": "<Self where Self : SwiftUI.View>",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "isDisabled",
-            "printedName": "isDisabled(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7SwiftUI4ViewP16UnityVideoPluginE10isDisabledyQrSbF",
-            "mangledName": "$s7SwiftUI4ViewP16UnityVideoPluginE10isDisabledyQrSbF",
-            "moduleName": "UnityVideoPlugin",
-            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
-            "sugared_genericSig": "<Self where Self : SwiftUI.View>",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:7SwiftUI4ViewP",
-        "mangledName": "$s7SwiftUI4ViewP",
-        "moduleName": "SwiftUICore",
-        "genericSig": "<τ_0_0.Body : SwiftUI.View>",
-        "sugared_genericSig": "<Self.Body : SwiftUI.View>",
-        "intro_Macosx": "10.15",
-        "intro_iOS": "13.0",
-        "intro_tvOS": "13.0",
-        "intro_watchOS": "6.0",
-        "declAttributes": [
-          "Preconcurrency",
-          "TypeEraser",
-          "OriginallyDefinedIn",
-          "OriginallyDefinedIn",
-          "OriginallyDefinedIn",
-          "OriginallyDefinedIn",
-          "Available",
-          "Available",
-          "Available",
-          "Available",
-          "Custom"
-        ],
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
           }
         ]
       },
@@ -12429,6 +12429,20 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/brindadavda\/Desktop\/IOSFramwork\/VideoPlayerSDK\/UnityVideoPlugin\/UnityVideoPlugin\/Views\/VideoPlayerView.swift",
+      "kind": "StringLiteral",
+      "offset": 7957,
+      "length": 84,
+      "value": "\"https:\/\/commondatastorage.googleapis.com\/gtv-videos-bucket\/sample\/BigBuckBunny.mp4\""
+    },
+    {
+      "filePath": "\/Users\/brindadavda\/Desktop\/IOSFramwork\/VideoPlayerSDK\/UnityVideoPlugin\/UnityVideoPlugin\/Views\/VideoPlayerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8050,
+      "length": 1,
+      "value": "3"
+    },
+    {
       "filePath": "\/Users\/brindadavda\/Desktop\/IOSFramwork\/VideoPlayerSDK\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
       "offset": 331,
@@ -12574,20 +12588,6 @@
       "offset": 1481,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/brindadavda\/Desktop\/IOSFramwork\/VideoPlayerSDK\/UnityVideoPlugin\/UnityVideoPlugin\/Views\/VideoPlayerView.swift",
-      "kind": "StringLiteral",
-      "offset": 7957,
-      "length": 84,
-      "value": "\"https:\/\/commondatastorage.googleapis.com\/gtv-videos-bucket\/sample\/BigBuckBunny.mp4\""
-    },
-    {
-      "filePath": "\/Users\/brindadavda\/Desktop\/IOSFramwork\/VideoPlayerSDK\/UnityVideoPlugin\/UnityVideoPlugin\/Views\/VideoPlayerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8050,
-      "length": 1,
-      "value": "3"
     },
     {
       "filePath": "\/Users\/brindadavda\/Library\/Developer\/Xcode\/DerivedData\/UnityVideoPlugin-czwdabxjopnapubpyagjecolrwqu\/Build\/Intermediates.noindex\/UnityVideoPlugin.build\/Debug-iphonesimulator\/UnityVideoPlugin.build\/DerivedSources\/GeneratedAssetSymbols.swift",
