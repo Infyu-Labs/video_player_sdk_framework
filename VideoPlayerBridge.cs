@@ -204,6 +204,15 @@ public class VideoPlayerBridge : MonoBehaviour
         setShowTimeDuration(visible);
     }
 
+    //calllback from back button 
+    public void OnSwiftBackButtonPressed(string message)
+    {
+        Debug.Log("Swift player back pressed!");
+        
+        //Add here unity work 
+       
+    }
+
     #endregion
 
     #region Helper Method - Convert C# String Array to UnsafePointer
