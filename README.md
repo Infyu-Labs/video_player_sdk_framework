@@ -26,19 +26,66 @@ This SDK bridges native Swift-based video playback functionality with Unity usin
 
 ---
 
-## 🔁 Swift-to-Unity Callback Integration
+## 🔁 Swift → Unity Callbacks
 
-This SDK supports calling back into Unity when video-related events occur (e.g., play, pause, exit, error).  
-It enables Unity to react to player events—useful for UI updates, analytics, or in-game logic.
+All video actions now automatically notify Unity via the `sendUnityMessage` helper function.  
+Messages are sent to the `GameManager` GameObject with method names corresponding to the action.
 
-### 🔁 Triggering the Callback in Swift
+| Action           | Unity Method           | Message Example     |
+|-----------------|----------------------|------------------|
+| Play video       | OnVideoPlay           | "Started"        |
+| Pause video      | OnVideoPause          | "Paused"         |
+| Stop video       | OnVideoStop           | "Stopped"        |
+| Seek forward     | OnVideoSeekForward    | "10.0"           |
+| Seek backward    | OnVideoSeekBackward   | "10.0"           |
+| Seek to specific time | OnVideoSeekTo     | "120.0"          |
+| Back / Close     | OnVideoClosed         | "User exited"    |
+| Video finished   | OnVideoFinished       | "Completed"      |
 
-You can trigger Unity callbacks from Swift using:
+### Example Unity `GameManager` Script
 
-```swift
-sendUnityCallback("event:play")
-sendUnityCallback("event:pause")
-sendUnityCallback("event:exit,total:300,watched:240")
+```csharp
+using UnityEngine;
+
+public class GameManager : MonoBehaviour
+{
+    public void OnVideoPlay(string msg) {
+        Debug.Log("Unity received play event: " + msg);
+        AudioListener.pause = false; // Resume game sound
+    }
+
+    public void OnVideoPause(string msg) {
+        Debug.Log("Unity received pause event: " + msg);
+    }
+
+    public void OnVideoStop(string msg) {
+        Debug.Log("Unity received stop event: " + msg);
+        AudioListener.pause = false;
+    }
+
+    public void OnVideoSeekForward(string msg) {
+        Debug.Log("Unity received seek forward: " + msg);
+    }
+
+    public void OnVideoSeekBackward(string msg) {
+        Debug.Log("Unity received seek backward: " + msg);
+    }
+
+    public void OnVideoSeekTo(string msg) {
+        Debug.Log("Unity received seek to: " + msg);
+    }
+
+    public void OnVideoClosed(string msg) {
+        Debug.Log("Unity received exit event: " + msg);
+        AudioListener.pause = false;
+    }
+
+    public void OnVideoFinished(string msg) {
+        Debug.Log("Unity received finished event: " + msg);
+        AudioListener.pause = false;
+    }
+}
+
 
 ### 📘 Example Usage in Unity
 
