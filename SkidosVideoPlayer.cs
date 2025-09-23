@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class SkidosVideoPlayer : MonoBehaviour
 {
     
     public void OnVideoPlay(string msg)
