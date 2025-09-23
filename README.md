@@ -42,12 +42,12 @@ Messages are sent to the `GameManager` GameObject with method names correspondin
 | Back / Close     | OnVideoClosed         | "User exited"    |
 | Video finished   | OnVideoFinished       | "Completed"      |
 
-### Example Unity `GameManager` Script
+### Example Unity `SkidosVideoPlayer` Script
 
 ```csharp
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class SkidosVideoPlayer : MonoBehaviour
 {
     public void OnVideoPlay(string msg) {
         Debug.Log("Unity received play event: " + msg);
