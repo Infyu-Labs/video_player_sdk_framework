@@ -229,4 +229,17 @@ public class VideoPlayerBridge : MonoBehaviour
     }
 
     #endregion
+
+    // Set Playlists (JSON String)
+    [DllImport("__Internal")]
+    private static extern void SetPlaylists(string json);
+    
+    // Play Playlist by ID
+    [DllImport("__Internal")]
+    private static extern void PlayPlaylist(string playlistId);
+    
+    // Set Premium Status (0 = false, 1 = true)
+    [DllImport("__Internal")]
+    private static extern void SetPremiumStatus(int value);
+
 }
