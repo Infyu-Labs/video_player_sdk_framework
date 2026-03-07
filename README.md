@@ -10,10 +10,9 @@ inside Unity applications.
 
 1.  Clone the repository or drag the `.framework` into your Xcode Unity
     project.
-2.  Ensure the framework is **Embedded & Signed** in:\
+2.  Ensure the framework is **Embedded & Signed** in:
     `Target → Frameworks, Libraries & Embedded Content`
-3.  Place the framework inside:\
-    `Assets/Plugins/iOS`
+3.  Place the framework inside: `Assets/Plugins/iOS`
 4.  Enable Objective-C support in Unity iOS Build Settings (if
     required).
 5.  Set the minimum deployment target to **iOS 15.0**.
@@ -22,88 +21,144 @@ inside Unity applications.
 
 ## 🎯 Key Features
 
--   ✅ Supports video formats: **HLS, MP4, MOV**
--   ✅ Playlist-based playback (v1.1.1+)
--   ✅ Premium / Non-premium support
--   ✅ Ad-controlled playback (Unity-driven)
--   ✅ Playback controls:
-    -   Play / Pause / Stop
-    -   Seek Forward / Backward
-    -   Skip +10 / -10 seconds
-    -   Scrub slider
-    -   Next / Previous video
--   ✅ Auto-hide controls
--   ✅ Exit / Back button support
--   ✅ Swift → Unity callbacks
+-   Supports video formats: **HLS, MP4, MOV**
+-   Playlist-based playback
+-   Premium / Non-premium support
+-   Unity-controlled Ad system
+-   Playlist autoplay
+-   Swift → Unity callbacks
+-   Custom playback controls
+
+Playback Controls:
+
+-   Play / Pause / Stop
+-   Seek Forward / Backward
+-   Skip +10 / -10 seconds
+-   Scrub slider
+-   Next / Previous video
+-   Exit / Back button
+-   Auto-hide controls
 
 ------------------------------------------------------------------------
 
-# 📺 Ad Integration Flow (Free vs Premium)
+## 📺 Ad Integration (Unity Controlled)
 
-The SDK follows a **Unity-controlled Ad Model**.
+The SDK does **NOT include any Ad SDK**.
 
-### 💎 Premium Users
+Instead, it notifies Unity **when an Ad must be shown**. Unity is
+responsible for showing the Ad and notifying the SDK when the Ad
+completes.
 
--   No ads shown
--   Videos play directly
--   Auto-play next video enabled
-
-### 🆓 Free Users
-
--   An ad must be shown **before every video**
--   Native player waits until Unity signals ad completion
--   After ad completes, playback resumes
+This allows the Unity app to use **any Ad provider (AdMob, IronSource,
+Unity Ads, etc.)**.
 
 ------------------------------------------------------------------------
 
-## 🔄 Ad Playback Flow (Free User)
+## 💎 Premium vs Free Users
 
-1.  Unity sets Ad Required flag before playback.
-2.  Native `play()` detects Ad flag and blocks playback.
-3.  Unity shows interstitial/rewarded ad.
-4.  On ad completion, Unity calls `ResumeAfterAd()`.
-5.  Native clears ad flag and starts playback.
+### Premium Users
+
+-   No Ads
+-   Videos play immediately
+-   Playlist autoplay works normally
+
+### Free Users
+
+Ads must be shown in the following situations:
+
+1.  Before starting the player
+2.  When user taps another video
+3.  When next video auto-plays
 
 ------------------------------------------------------------------------
 
-## 🎮 Unity Side Example
+## 🔄 Ad Flow
+
+SDK requests Ad\
+↓\
+Unity receives callback\
+↓\
+Unity shows Ad\
+↓\
+Ad completes\
+↓\
+Unity calls `AdCompletedResumePlayback()`\
+↓\
+SDK resumes playback
+
+------------------------------------------------------------------------
+
+## 🎮 Unity Usage Example
 
 ``` csharp
-if (!isPremiumUser)
+public void PlayVideo()
 {
-    playerBridge.RequireAdBeforePlay();
-
-    ShowAd(() =>
+    if (!isPremiumUser)
     {
-        playerBridge.ResumeAfterAd();
-    });
-}
-else
-{
-    playerBridge.ResumeAfterAd();
+        playerBridge.SetAdRequired(true);
+
+        playerBridge.Play(); // SDK will wait for Ad
+
+        ShowAd(() =>
+        {
+            playerBridge.AdCompletedResumePlayback();
+        });
+    }
+    else
+    {
+        playerBridge.SetAdRequired(false);
+        playerBridge.Play();
+    }
 }
 ```
 
 ------------------------------------------------------------------------
 
-## 📲 Native Swift Behavior
+## 📡 Required Unity Callback Methods
 
--   Native does NOT contain ad SDK.
--   Native only blocks or resumes playback based on Unity instruction.
--   Ensures clean separation of concerns.
+### When user clicks another video
+
+``` csharp
+public void OnVideoTileClicked(string videoId)
+{
+    ShowAd(() =>
+    {
+        playerBridge.AdCompletedResumePlayback();
+    });
+}
+```
+
+### When next video auto-plays
+
+``` csharp
+public void OnNextVideoAdRequired(string index)
+{
+    ShowAd(() =>
+    {
+        playerBridge.AdCompletedResumePlayback();
+    });
+}
+```
+
+### When video finishes
+
+``` csharp
+public void OnVideoFinished(string index)
+{
+    Debug.Log("Video finished: " + index);
+}
+```
 
 ------------------------------------------------------------------------
 
-## 🚀 IMPORTANT --- Playlist Flow (v1.1.1+)
+## 🚀 Playlist Integration
 
-Starting from **v1.1.1**, the SDK uses a **Playlist-first approach**.
+Required order:
 
-### ✅ Mandatory Order
+1.  `SetPlaylists(json)`
+2.  `PlayPlaylist(playlistId)`
 
-1️⃣ Call `SetPlaylists(json)`\
-2️⃣ Call `PlayPlaylist(playlistId)`
-
-⚠️ You must call `SetPlaylists()` first before calling `PlayPlaylist()`.
+⚠️ `SetPlaylists()` must always be called before `PlayPlaylist()`.
 
 ------------------------------------------------------------------------
 
@@ -133,7 +188,7 @@ Starting from **v1.1.1**, the SDK uses a **Playlist-first approach**.
 
 ``` csharp
 playerBridge.SetPremium(true);   // Premium user
-playerBridge.SetPremium(false);  // Non-premium user
+playerBridge.SetPremium(false);  // Free user
 ```
 
 ------------------------------------------------------------------------
@@ -142,65 +197,75 @@ playerBridge.SetPremium(false);  // Non-premium user
 
 Messages are sent to the **SkidosVideoPlayer** GameObject.
 
-  Action                  Unity Method          Message Example
-  ----------------------- --------------------- -----------------
-  Play video              OnVideoPlay           "Started"
-  Pause video             OnVideoPause          "Paused"
-  Stop video              OnVideoStop           "Stopped"
-  Seek forward            OnVideoSeekForward    "10.0"
-  Seek backward           OnVideoSeekBackward   "10.0"
-  Seek to specific time   OnVideoSeekTo         "120.0"
-  Back / Close            OnVideoClosed         "User exited"
-  Video finished          OnVideoFinished       "Completed"
+  Action                   Unity Method            Message
+  ------------------------ ----------------------- ---------------
+  Play video               OnVideoPlay             "Started"
+  Pause video              OnVideoPause            "Paused"
+  Stop video               OnVideoStop             "Stopped"
+  Seek forward             OnVideoSeekForward      "10.0"
+  Seek backward            OnVideoSeekBackward     "10.0"
+  Seek to time             OnVideoSeekTo           "120.0"
+  Video finished           OnVideoFinished         "index"
+  Video tile clicked       OnVideoTileClicked      "videoId"
+  Next video ad required   OnNextVideoAdRequired   "index"
+  Player closed            OnVideoClosed           "User exited"
 
 ------------------------------------------------------------------------
 
-## 🧹 Cleanup (Mandatory)
+## 🧹 Cleanup
 
-Always call:
-
-``` csharp
-playerBridge.Cleanup();
-```
-
-Inside:
+Always call cleanup when exiting the app.
 
 ``` csharp
 void OnApplicationQuit()
+{
+    playerBridge.Cleanup();
+}
 ```
-
-------------------------------------------------------------------------
-
-## 🔄 Migration Note
-
-**Old Flow:**\
-`SetURLs()` → `Play()`
-
-**New Flow (v1.1.1+):**\
-`SetPlaylists()` → `PlayPlaylist()`
 
 ------------------------------------------------------------------------
 
 ## 📝 Version History
 
-### \[1.1.1\] -- 2026-02-17
+### \[1.2.0\] --- 2026-03-07
+
+Major update to Ad Integration.
+
+Added:
+
+-   Video tile click Ad callback
+-   Auto next video Ad callback
+-   Improved Unity controlled Ad workflow
+-   Updated SDK documentation
+
+New Callbacks:
+
+-   `OnVideoTileClicked`
+-   `OnNextVideoAdRequired`
+
+------------------------------------------------------------------------
+
+### \[1.1.1\] --- 2026-02-17
 
 -   Added Playlist-based playback system
 -   Added `SetPlaylists()`
 -   Added `PlayPlaylist()`
 -   Added `SetPremiumStatus()`
 -   Added Unity-controlled Ad Flow
--   Updated integration flow
--   Updated documentation
 
-### \[1.1.0\] -- 2025-06-12
+------------------------------------------------------------------------
+
+### \[1.1.0\] --- 2025-06-12
 
 -   Fixed video freeze issue
 -   Improved playback stability
 -   Improved progress bar UI
 
-### \[1.0.0\] -- 2025-06-09
+------------------------------------------------------------------------
 
--   Fixed layout issues in landscape
--   Controls auto-hide improvements
--   Fixed resume freeze issue
+### \[1.0.0\] --- 2025-06-09
+
+-   Initial release
+-   Landscape player support
+-   Auto-hide controls
+-   Resume playback fixes
