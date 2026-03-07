@@ -20909,6 +20909,232 @@
           },
           {
             "kind": "Var",
+            "name": "pendingVideo",
+            "printedName": "pendingVideo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UnityVideoPlugin.Video?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Video",
+                    "printedName": "UnityVideoPlugin.Video",
+                    "usr": "s:16UnityVideoPlugin0B0V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin16PlayerControllerC07pendingB0AA0B0VSgvp",
+            "mangledName": "$s16UnityVideoPlugin16PlayerControllerC07pendingB0AA0B0VSgvp",
+            "moduleName": "UnityVideoPlugin",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UnityVideoPlugin.Video?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Video",
+                        "printedName": "UnityVideoPlugin.Video",
+                        "usr": "s:16UnityVideoPlugin0B0V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin16PlayerControllerC07pendingB0AA0B0VSgvg",
+                "mangledName": "$s16UnityVideoPlugin16PlayerControllerC07pendingB0AA0B0VSgvg",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UnityVideoPlugin.Video?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Video",
+                        "printedName": "UnityVideoPlugin.Video",
+                        "usr": "s:16UnityVideoPlugin0B0V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin16PlayerControllerC07pendingB0AA0B0VSgvs",
+                "mangledName": "$s16UnityVideoPlugin16PlayerControllerC07pendingB0AA0B0VSgvs",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin16PlayerControllerC07pendingB0AA0B0VSgvM",
+                "mangledName": "$s16UnityVideoPlugin16PlayerControllerC07pendingB0AA0B0VSgvM",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pendingNextIndex",
+            "printedName": "pendingNextIndex",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin16PlayerControllerC16pendingNextIndexSiSgvp",
+            "mangledName": "$s16UnityVideoPlugin16PlayerControllerC16pendingNextIndexSiSgvp",
+            "moduleName": "UnityVideoPlugin",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin16PlayerControllerC16pendingNextIndexSiSgvg",
+                "mangledName": "$s16UnityVideoPlugin16PlayerControllerC16pendingNextIndexSiSgvg",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin16PlayerControllerC16pendingNextIndexSiSgvs",
+                "mangledName": "$s16UnityVideoPlugin16PlayerControllerC16pendingNextIndexSiSgvs",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin16PlayerControllerC16pendingNextIndexSiSgvM",
+                "mangledName": "$s16UnityVideoPlugin16PlayerControllerC16pendingNextIndexSiSgvM",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "playlistController",
             "printedName": "playlistController",
             "children": [
@@ -22062,7 +22288,8 @@
             "moduleName": "UnityVideoPlugin",
             "isOpen": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -23168,7 +23395,8 @@
         "moduleName": "UnityVideoPlugin",
         "declAttributes": [
           "AccessControl",
-          "CDecl"
+          "CDecl",
+          "RawDocComment"
         ],
         "funcSelfKind": "NonMutating"
       },
@@ -28628,21 +28856,21 @@
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 1546,
+      "offset": 1602,
       "length": 90,
       "value": "\"https:\/\/d142uv38695ylm.cloudfront.net\/videos\/promo\/allesneu.land-promo-trailer-360p.m3u8\""
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
       "kind": "IntegerLiteral",
-      "offset": 1645,
+      "offset": 1701,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
       "kind": "IntegerLiteral",
-      "offset": 1695,
+      "offset": 1751,
       "length": 1,
       "value": "0"
     },
