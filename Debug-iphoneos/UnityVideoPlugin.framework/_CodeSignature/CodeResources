@@ -10,19 +10,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aSSxHnsZUcfwDgevCgrmu8e2zOM=
+		pqdBVHeVfV3ml40wW50jmL3eJkA=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		gjE1HrPJApL3B3mtofacTBxDf/A=
+		qM4bW50XPyTUWw18XucdUYbfuZw=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		xHiDr/GarWFdMC5U/OSddKYw01g=
+		oWjzC3Dl/7rxGfPne2zPweyEExo=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		hcKEcWIm7O+Vu02Nnw3uvVtyMYo=
+		wzESLGTxnR+pls71hctARMkpXQg=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		hcKEcWIm7O+Vu02Nnw3uvVtyMYo=
+		wzESLGTxnR+pls71hctARMkpXQg=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		mEQn4sEKPp6xOxRW3TSn9HjkUfg=
+		blmXf0ahdRdxtW1lZUltW8dnPfQ=
 		</data>
 		<key>OFL.txt</key>
 		<data>
@@ -126,21 +126,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			35pzmokCBW3pYtJNCoQ/izROqdeIE2rUHAjpI3yJlZ4=
+			xfkyxn85Y9Dn72b/EuO5pAKSp3/ga8RKZ0zDsN0qsVw=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vVnUN4q7se+xBUcVzP2w4zEi+8zMnogyf6OsHq31krk=
+			zWLDvI6XnkkGDuBvLicuInN8H/Aw3qzEdu0oSkcVCk8=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U+n9Cy2gGNj47iV3CyKm8g/6p9JMmreIRRyF3x/yxT4=
+			tES38BAMOKrx7MIYIuhbrkziPmJgPw9Slz6ltN6s2Gc=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -154,14 +154,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			U+n9Cy2gGNj47iV3CyKm8g/6p9JMmreIRRyF3x/yxT4=
+			tES38BAMOKrx7MIYIuhbrkziPmJgPw9Slz6ltN6s2Gc=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D87eLdvIa/ypiLm3TR2j/7jg1H1cQCuW7WC+EYU1kug=
+			ELhDDDUj7tuyqfdqZCtSb43OtckMEu9OudVYe0yBh40=
 			</data>
 		</dict>
 		<key>OFL.txt</key>

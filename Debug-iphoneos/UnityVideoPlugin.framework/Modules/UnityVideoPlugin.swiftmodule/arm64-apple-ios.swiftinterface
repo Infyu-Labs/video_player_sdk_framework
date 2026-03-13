@@ -556,6 +556,8 @@ public func PlayPlaylist(_ idPointer: Swift.UnsafePointer<Swift.CChar>)
 public func SetPremiumStatus(_ value: Swift.Int32)
 @_cdecl("SetAdRequired")
 public func SetAdRequired(_ value: Swift.Bool)
+@_cdecl("registerUnityCallback")
+public func registerUnityCallback()
 @_cdecl("AdCompletedResumePlayback")
 public func AdCompletedResumePlayback()
 public class VideoPlayerService {
