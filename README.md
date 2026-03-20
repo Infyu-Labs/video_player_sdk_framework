@@ -155,10 +155,46 @@ public void OnVideoFinished(string index)
 
 Required order:
 
-1.  `SetPlaylists(json)`
-2.  `PlayPlaylist(playlistId)`
+1.  `SetEpisodes(json)`
+2.  `SetPlaylists(json)`
+3.  `PlayPlaylist(playlistId)`
 
-⚠️ `SetPlaylists()` must always be called before `PlayPlaylist()`.
+⚠️ `SetPlaylists()` and `SetEpisodes()`  must always be called before `PlayPlaylist()`.
+
+------------------------------------------------------------------------
+
+## 📘 Input JSON Format (Unity → iOS)
+
+### 🎬 Episodes JSON
+
+``` json
+[
+    {
+    "id": "dinoworld",
+    "episodes":[
+            { 
+            "index": 1,
+            "url": "https://video1.m3u8", "thumbnail": "https://image.com/thumb1.png",
+            "title": "Episode 1"
+            }
+        ]
+    }
+]
+```
+
+### 📂 Playlist Metadata JSON
+
+``` json
+[
+    {
+     "name": "DINO WORLD",
+     "id": "dinoworld",
+     "thumbnail":"https://image.com/thumb.png",
+     "order": 1
+    }
+]
+
+```
 
 ------------------------------------------------------------------------
 
