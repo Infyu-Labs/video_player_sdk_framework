@@ -54,15 +54,14 @@ public enum SampleVideos {
   public static let Playlist2: UnityVideoPlugin.Playlist
   public static let Playlist3: UnityVideoPlugin.Playlist
 }
-public typealias PlaylistResponse = [UnityVideoPlugin.PlaylistCategory]
-public struct PlaylistCategory : Swift.Codable {
+public struct EpisodeResponse : Swift.Codable {
   public let id: Swift.String
   public let episodes: [UnityVideoPlugin.Episode]
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct Episode : Swift.Codable {
-  public let index: Swift.Int
+  public let index: Swift.String
   public let url: Swift.String
   public let thumbnail: Swift.String
   public let title: Swift.String
@@ -71,12 +70,14 @@ public struct Episode : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum SubscriptionStatus {
+public enum SubscriptionStatus : Swift.String {
   case free
   case premium
-  public static func == (a: UnityVideoPlugin.SubscriptionStatus, b: UnityVideoPlugin.SubscriptionStatus) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -90,6 +91,28 @@ public struct Video : Swift.Codable {
   public var isWatched: Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+public enum LogType : Swift.String {
+  case log
+  case warning
+  case error
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class VPLogger {
+  public static var isEnabled: Swift.Bool
+  public static func print(_ message: Swift.String, type: UnityVideoPlugin.LogType = .log, file: Swift.String = #file, line: Swift.Int = #line)
+  @objc deinit
+}
+extension UnityVideoPlugin.VPLogger {
+  public static func log(_ message: Swift.String, file: Swift.String = #file, line: Swift.Int = #line)
+  public static func warning(_ message: Swift.String, file: Swift.String = #file, line: Swift.Int = #line)
+  public static func error(_ message: Swift.String, file: Swift.String = #file, line: Swift.Int = #line)
 }
 @_hasMissingDesignatedInitializers final public class PlaylistController : Combine.ObservableObject {
   #if compiler(>=5.3) && $NonescapableTypes
@@ -496,6 +519,7 @@ public struct Video : Swift.Codable {
   public func seekBackward(seconds: Swift.Double)
   public func seekTo(value: Swift.Double)
   public func getURLs() -> [Swift.String]
+  public func switchScreenBack_and_forth()
   public func backToHome()
   public func formatTime(seconds: Swift.Double) -> Swift.String
   public func cleanup()
@@ -550,10 +574,12 @@ public func setShowSeekbar(_ visible: Swift.Bool)
 public func setShowTimeDuration(_ visible: Swift.Bool)
 @_cdecl("SetPlaylists")
 public func SetPlaylists(_ jsonPointer: Swift.UnsafePointer<Swift.CChar>)
+@_cdecl("SetEpisodes")
+public func SetEpisodes(_ jsonPointer: Swift.UnsafePointer<Swift.CChar>)
 @_cdecl("PlayPlaylist")
 public func PlayPlaylist(_ idPointer: Swift.UnsafePointer<Swift.CChar>)
-@_cdecl("SetPremiumStatus")
-public func SetPremiumStatus(_ value: Swift.Int32)
+@_cdecl("SetPremium")
+public func SetPremium(_ value: Swift.Bool)
 @_cdecl("SetAdRequired")
 public func SetAdRequired(_ value: Swift.Bool)
 @_cdecl("registerUnityCallback")
@@ -590,13 +616,17 @@ public class VideoPlayerService {
   public func getAllPlaylists() -> [UnityVideoPlugin.Playlist]
   public func playPlaylist(_ id: Swift.String)
   public func setPremium(_ isPremium: Swift.Bool)
-  public func playNextAfterAd()
+  public func AdCompletedResumePlayback()
   @objc deinit
 }
 extension UnityVideoPlugin.DissabledViewModifier : Swift.Sendable {}
 extension UnityVideoPlugin.HiddenViewModifier : Swift.Sendable {}
 extension UnityVideoPlugin.SubscriptionStatus : Swift.Equatable {}
 extension UnityVideoPlugin.SubscriptionStatus : Swift.Hashable {}
+extension UnityVideoPlugin.SubscriptionStatus : Swift.RawRepresentable {}
+extension UnityVideoPlugin.LogType : Swift.Equatable {}
+extension UnityVideoPlugin.LogType : Swift.Hashable {}
+extension UnityVideoPlugin.LogType : Swift.RawRepresentable {}
 extension UnityVideoPlugin.PlaylistView : Swift.Sendable {}
 extension UnityVideoPlugin.VideoPlayerView : Swift.Sendable {}
 extension UnityVideoPlugin.SwiftUISlider : Swift.Sendable {}
