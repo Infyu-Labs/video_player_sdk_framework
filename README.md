@@ -95,8 +95,6 @@ public void PlayVideo()
 {
     if (!isPremiumUser)
     {
-        playerBridge.SetAdRequired(true);
-
         playerBridge.Play(); // SDK will wait for Ad
 
         ShowAd(() =>
@@ -106,7 +104,6 @@ public void PlayVideo()
     }
     else
     {
-        playerBridge.SetAdRequired(false);
         playerBridge.Play();
     }
 }

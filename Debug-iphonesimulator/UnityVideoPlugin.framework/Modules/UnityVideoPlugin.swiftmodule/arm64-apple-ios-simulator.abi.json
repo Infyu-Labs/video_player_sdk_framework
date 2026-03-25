@@ -1715,6 +1715,596 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "LogType",
+        "printedName": "LogType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "log",
+            "printedName": "log",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnityVideoPlugin.LogType.Type) -> UnityVideoPlugin.LogType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogType",
+                    "printedName": "UnityVideoPlugin.LogType",
+                    "usr": "s:16UnityVideoPlugin7LogTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnityVideoPlugin.LogType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogType",
+                        "printedName": "UnityVideoPlugin.LogType",
+                        "usr": "s:16UnityVideoPlugin7LogTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16UnityVideoPlugin7LogTypeO3logyA2CmF",
+            "mangledName": "$s16UnityVideoPlugin7LogTypeO3logyA2CmF",
+            "moduleName": "UnityVideoPlugin"
+          },
+          {
+            "kind": "Var",
+            "name": "warning",
+            "printedName": "warning",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnityVideoPlugin.LogType.Type) -> UnityVideoPlugin.LogType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogType",
+                    "printedName": "UnityVideoPlugin.LogType",
+                    "usr": "s:16UnityVideoPlugin7LogTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnityVideoPlugin.LogType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogType",
+                        "printedName": "UnityVideoPlugin.LogType",
+                        "usr": "s:16UnityVideoPlugin7LogTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16UnityVideoPlugin7LogTypeO7warningyA2CmF",
+            "mangledName": "$s16UnityVideoPlugin7LogTypeO7warningyA2CmF",
+            "moduleName": "UnityVideoPlugin"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UnityVideoPlugin.LogType.Type) -> UnityVideoPlugin.LogType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogType",
+                    "printedName": "UnityVideoPlugin.LogType",
+                    "usr": "s:16UnityVideoPlugin7LogTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "UnityVideoPlugin.LogType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogType",
+                        "printedName": "UnityVideoPlugin.LogType",
+                        "usr": "s:16UnityVideoPlugin7LogTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16UnityVideoPlugin7LogTypeO5erroryA2CmF",
+            "mangledName": "$s16UnityVideoPlugin7LogTypeO5erroryA2CmF",
+            "moduleName": "UnityVideoPlugin"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UnityVideoPlugin.LogType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogType",
+                    "printedName": "UnityVideoPlugin.LogType",
+                    "usr": "s:16UnityVideoPlugin7LogTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16UnityVideoPlugin7LogTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s16UnityVideoPlugin7LogTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "UnityVideoPlugin",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin7LogTypeO8rawValueSSvp",
+            "mangledName": "$s16UnityVideoPlugin7LogTypeO8rawValueSSvp",
+            "moduleName": "UnityVideoPlugin",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin7LogTypeO8rawValueSSvg",
+                "mangledName": "$s16UnityVideoPlugin7LogTypeO8rawValueSSvg",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:16UnityVideoPlugin7LogTypeO",
+        "mangledName": "$s16UnityVideoPlugin7LogTypeO",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VPLogger",
+        "printedName": "VPLogger",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isEnabled",
+            "printedName": "isEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin8VPLoggerC9isEnabledSbvpZ",
+            "mangledName": "$s16UnityVideoPlugin8VPLoggerC9isEnabledSbvpZ",
+            "moduleName": "UnityVideoPlugin",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin8VPLoggerC9isEnabledSbvgZ",
+                "mangledName": "$s16UnityVideoPlugin8VPLoggerC9isEnabledSbvgZ",
+                "moduleName": "UnityVideoPlugin",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin8VPLoggerC9isEnabledSbvsZ",
+                "mangledName": "$s16UnityVideoPlugin8VPLoggerC9isEnabledSbvsZ",
+                "moduleName": "UnityVideoPlugin",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin8VPLoggerC9isEnabledSbvMZ",
+                "mangledName": "$s16UnityVideoPlugin8VPLoggerC9isEnabledSbvMZ",
+                "moduleName": "UnityVideoPlugin",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "print",
+            "printedName": "print(_:type:file:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogType",
+                "printedName": "UnityVideoPlugin.LogType",
+                "hasDefaultArg": true,
+                "usr": "s:16UnityVideoPlugin7LogTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UnityVideoPlugin8VPLoggerC5print_4type4file4lineySS_AA7LogTypeOSSSitFZ",
+            "mangledName": "$s16UnityVideoPlugin8VPLoggerC5print_4type4file4lineySS_AA7LogTypeOSSSitFZ",
+            "moduleName": "UnityVideoPlugin",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VPLogger",
+                "printedName": "UnityVideoPlugin.VPLogger",
+                "usr": "s:16UnityVideoPlugin8VPLoggerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16UnityVideoPlugin8VPLoggerCACycfc",
+            "mangledName": "$s16UnityVideoPlugin8VPLoggerCACycfc",
+            "moduleName": "UnityVideoPlugin",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(_:file:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UnityVideoPlugin8VPLoggerC3log_4file4lineySS_SSSitFZ",
+            "mangledName": "$s16UnityVideoPlugin8VPLoggerC3log_4file4lineySS_SSSitFZ",
+            "moduleName": "UnityVideoPlugin",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "warning",
+            "printedName": "warning(_:file:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UnityVideoPlugin8VPLoggerC7warning_4file4lineySS_SSSitFZ",
+            "mangledName": "$s16UnityVideoPlugin8VPLoggerC7warning_4file4lineySS_SSSitFZ",
+            "moduleName": "UnityVideoPlugin",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "error",
+            "printedName": "error(_:file:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16UnityVideoPlugin8VPLoggerC5error_4file4lineySS_SSSitFZ",
+            "mangledName": "$s16UnityVideoPlugin8VPLoggerC5error_4file4lineySS_SSSitFZ",
+            "moduleName": "UnityVideoPlugin",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16UnityVideoPlugin8VPLoggerC",
+        "mangledName": "$s16UnityVideoPlugin8VPLoggerC",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "Playlist",
         "printedName": "Playlist",
         "children": [
@@ -4721,596 +5311,6 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "LogType",
-        "printedName": "LogType",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "log",
-            "printedName": "log",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(UnityVideoPlugin.LogType.Type) -> UnityVideoPlugin.LogType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LogType",
-                    "printedName": "UnityVideoPlugin.LogType",
-                    "usr": "s:16UnityVideoPlugin7LogTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "UnityVideoPlugin.LogType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LogType",
-                        "printedName": "UnityVideoPlugin.LogType",
-                        "usr": "s:16UnityVideoPlugin7LogTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16UnityVideoPlugin7LogTypeO3logyA2CmF",
-            "mangledName": "$s16UnityVideoPlugin7LogTypeO3logyA2CmF",
-            "moduleName": "UnityVideoPlugin"
-          },
-          {
-            "kind": "Var",
-            "name": "warning",
-            "printedName": "warning",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(UnityVideoPlugin.LogType.Type) -> UnityVideoPlugin.LogType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LogType",
-                    "printedName": "UnityVideoPlugin.LogType",
-                    "usr": "s:16UnityVideoPlugin7LogTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "UnityVideoPlugin.LogType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LogType",
-                        "printedName": "UnityVideoPlugin.LogType",
-                        "usr": "s:16UnityVideoPlugin7LogTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16UnityVideoPlugin7LogTypeO7warningyA2CmF",
-            "mangledName": "$s16UnityVideoPlugin7LogTypeO7warningyA2CmF",
-            "moduleName": "UnityVideoPlugin"
-          },
-          {
-            "kind": "Var",
-            "name": "error",
-            "printedName": "error",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(UnityVideoPlugin.LogType.Type) -> UnityVideoPlugin.LogType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LogType",
-                    "printedName": "UnityVideoPlugin.LogType",
-                    "usr": "s:16UnityVideoPlugin7LogTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "UnityVideoPlugin.LogType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LogType",
-                        "printedName": "UnityVideoPlugin.LogType",
-                        "usr": "s:16UnityVideoPlugin7LogTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16UnityVideoPlugin7LogTypeO5erroryA2CmF",
-            "mangledName": "$s16UnityVideoPlugin7LogTypeO5erroryA2CmF",
-            "moduleName": "UnityVideoPlugin"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UnityVideoPlugin.LogType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "LogType",
-                    "printedName": "UnityVideoPlugin.LogType",
-                    "usr": "s:16UnityVideoPlugin7LogTypeO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16UnityVideoPlugin7LogTypeO8rawValueACSgSS_tcfc",
-            "mangledName": "$s16UnityVideoPlugin7LogTypeO8rawValueACSgSS_tcfc",
-            "moduleName": "UnityVideoPlugin",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16UnityVideoPlugin7LogTypeO8rawValueSSvp",
-            "mangledName": "$s16UnityVideoPlugin7LogTypeO8rawValueSSvp",
-            "moduleName": "UnityVideoPlugin",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin7LogTypeO8rawValueSSvg",
-                "mangledName": "$s16UnityVideoPlugin7LogTypeO8rawValueSSvg",
-                "moduleName": "UnityVideoPlugin",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:16UnityVideoPlugin7LogTypeO",
-        "mangledName": "$s16UnityVideoPlugin7LogTypeO",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "enumRawTypeName": "String",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "VPLogger",
-        "printedName": "VPLogger",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "isEnabled",
-            "printedName": "isEnabled",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16UnityVideoPlugin8VPLoggerC9isEnabledSbvpZ",
-            "mangledName": "$s16UnityVideoPlugin8VPLoggerC9isEnabledSbvpZ",
-            "moduleName": "UnityVideoPlugin",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin8VPLoggerC9isEnabledSbvgZ",
-                "mangledName": "$s16UnityVideoPlugin8VPLoggerC9isEnabledSbvgZ",
-                "moduleName": "UnityVideoPlugin",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin8VPLoggerC9isEnabledSbvsZ",
-                "mangledName": "$s16UnityVideoPlugin8VPLoggerC9isEnabledSbvsZ",
-                "moduleName": "UnityVideoPlugin",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16UnityVideoPlugin8VPLoggerC9isEnabledSbvMZ",
-                "mangledName": "$s16UnityVideoPlugin8VPLoggerC9isEnabledSbvMZ",
-                "moduleName": "UnityVideoPlugin",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "print",
-            "printedName": "print(_:type:file:line:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "LogType",
-                "printedName": "UnityVideoPlugin.LogType",
-                "hasDefaultArg": true,
-                "usr": "s:16UnityVideoPlugin7LogTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16UnityVideoPlugin8VPLoggerC5print_4type4file4lineySS_AA7LogTypeOSSSitFZ",
-            "mangledName": "$s16UnityVideoPlugin8VPLoggerC5print_4type4file4lineySS_AA7LogTypeOSSSitFZ",
-            "moduleName": "UnityVideoPlugin",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "VPLogger",
-                "printedName": "UnityVideoPlugin.VPLogger",
-                "usr": "s:16UnityVideoPlugin8VPLoggerC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16UnityVideoPlugin8VPLoggerCACycfc",
-            "mangledName": "$s16UnityVideoPlugin8VPLoggerCACycfc",
-            "moduleName": "UnityVideoPlugin",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "log",
-            "printedName": "log(_:file:line:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16UnityVideoPlugin8VPLoggerC3log_4file4lineySS_SSSitFZ",
-            "mangledName": "$s16UnityVideoPlugin8VPLoggerC3log_4file4lineySS_SSSitFZ",
-            "moduleName": "UnityVideoPlugin",
-            "static": true,
-            "declAttributes": [
-              "Final"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "warning",
-            "printedName": "warning(_:file:line:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16UnityVideoPlugin8VPLoggerC7warning_4file4lineySS_SSSitFZ",
-            "mangledName": "$s16UnityVideoPlugin8VPLoggerC7warning_4file4lineySS_SSSitFZ",
-            "moduleName": "UnityVideoPlugin",
-            "static": true,
-            "declAttributes": [
-              "Final"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "error",
-            "printedName": "error(_:file:line:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16UnityVideoPlugin8VPLoggerC5error_4file4lineySS_SSSitFZ",
-            "mangledName": "$s16UnityVideoPlugin8VPLoggerC5error_4file4lineySS_SSSitFZ",
-            "moduleName": "UnityVideoPlugin",
-            "static": true,
-            "declAttributes": [
-              "Final"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:16UnityVideoPlugin8VPLoggerC",
-        "mangledName": "$s16UnityVideoPlugin8VPLoggerC",
-        "moduleName": "UnityVideoPlugin",
-        "declAttributes": [
-          "Final",
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -12770,6 +12770,171 @@
           },
           {
             "kind": "Var",
+            "name": "isPlayingUI",
+            "printedName": "isPlayingUI",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin0B10PlayerViewV11isPlayingUISbvp",
+            "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV11isPlayingUISbvp",
+            "moduleName": "UnityVideoPlugin",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "ProjectedValueProperty",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin0B10PlayerViewV11isPlayingUISbvg",
+                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV11isPlayingUISbvg",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin0B10PlayerViewV11isPlayingUISbvs",
+                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV11isPlayingUISbvs",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin0B10PlayerViewV11isPlayingUISbvM",
+                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV11isPlayingUISbvM",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$isPlayingUI",
+            "printedName": "$isPlayingUI",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Binding",
+                "printedName": "SwiftUI.Binding<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:7SwiftUI7BindingV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin0B10PlayerViewV12$isPlayingUI05SwiftH07BindingVySbGvp",
+            "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV12$isPlayingUI05SwiftH07BindingVySbGvp",
+            "moduleName": "UnityVideoPlugin",
+            "implicit": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Binding",
+                    "printedName": "SwiftUI.Binding<Swift.Bool>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI7BindingV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin0B10PlayerViewV12$isPlayingUI05SwiftH07BindingVySbGvg",
+                "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV12$isPlayingUI05SwiftH07BindingVySbGvg",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "isRunningOnMac",
             "printedName": "isRunningOnMac",
             "children": [
@@ -12868,7 +13033,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(playerController:orientationObserver:controller:)",
+            "printedName": "init(playerController:orientationObserver:controller:isPlayingUI:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12894,11 +13059,18 @@
                 "name": "PlaylistController",
                 "printedName": "UnityVideoPlugin.PlaylistController",
                 "usr": "s:16UnityVideoPlugin18PlaylistControllerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:16UnityVideoPlugin0B10PlayerViewV16playerController19orientationObserver10controllerAcA0dG0C_AA011OrientationI0CAA08PlaylistG0Ctcfc",
-            "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV16playerController19orientationObserver10controllerAcA0dG0C_AA011OrientationI0CAA08PlaylistG0Ctcfc",
+            "usr": "s:16UnityVideoPlugin0B10PlayerViewV16playerController19orientationObserver10controller11isPlayingUIAcA0dG0C_AA011OrientationI0CAA08PlaylistG0CSbtcfc",
+            "mangledName": "$s16UnityVideoPlugin0B10PlayerViewV16playerController19orientationObserver10controller11isPlayingUIAcA0dG0C_AA011OrientationI0CAA08PlaylistG0CSbtcfc",
             "moduleName": "UnityVideoPlugin",
             "implicit": true,
             "declAttributes": [
@@ -23303,6 +23475,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnityVideoPlugin",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Var",
         "name": "currentVideoPlayerService",
         "printedName": "currentVideoPlayerService",
@@ -23329,8 +23511,7 @@
         "declAttributes": [
           "HasInitialValue",
           "HasStorage",
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ],
         "hasStorage": true,
         "accessors": [
@@ -24021,65 +24202,6 @@
           "AccessControl",
           "CDecl"
         ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "UnitySendMessage",
-        "printedName": "UnitySendMessage(_:_:_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "UnsafePointer",
-            "printedName": "Swift.UnsafePointer<Swift.Int8>",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int8",
-                "printedName": "Swift.Int8",
-                "usr": "s:s4Int8V"
-              }
-            ],
-            "usr": "s:SP"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "UnsafePointer",
-            "printedName": "Swift.UnsafePointer<Swift.Int8>",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int8",
-                "printedName": "Swift.Int8",
-                "usr": "s:s4Int8V"
-              }
-            ],
-            "usr": "s:SP"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "UnsafePointer",
-            "printedName": "Swift.UnsafePointer<Swift.Int8>",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int8",
-                "printedName": "Swift.Int8",
-                "usr": "s:s4Int8V"
-              }
-            ],
-            "usr": "s:SP"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "s:16UnityVideoPlugin0A11SendMessageyySPys4Int8VG_A2EtF",
-        "mangledName": "$s16UnityVideoPlugin0A11SendMessageyySPys4Int8VG_A2EtF",
-        "moduleName": "UnityVideoPlugin",
         "funcSelfKind": "NonMutating"
       },
       {
@@ -28358,6 +28480,55 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Helper\/VPLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 172,
+      "length": 5,
+      "value": "\"LOG\""
+    },
+    {
+      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Helper\/VPLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 197,
+      "length": 9,
+      "value": "\"WARNING\""
+    },
+    {
+      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Helper\/VPLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 224,
+      "length": 7,
+      "value": "\"ERROR\""
+    },
+    {
+      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Helper\/VPLogger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 388,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Helper\/VPLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 453,
+      "length": 22,
+      "value": "\"[INFYU_VIDEO_PLAYER]\""
+    },
+    {
+      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Helper\/VPLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 654,
+      "length": 21,
+      "value": "\"yyyy-MM-dd HH:mm:ss\""
+    },
+    {
+      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Helper\/VPLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 722,
+      "length": 13,
+      "value": "\"en_US_POSIX\""
+    },
+    {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Model\/Playlist.swift",
       "kind": "StringLiteral",
       "offset": 705,
@@ -29044,55 +29215,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Helper\/VPLogger.swift",
-      "kind": "StringLiteral",
-      "offset": 172,
-      "length": 5,
-      "value": "\"LOG\""
-    },
-    {
-      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Helper\/VPLogger.swift",
-      "kind": "StringLiteral",
-      "offset": 197,
-      "length": 9,
-      "value": "\"WARNING\""
-    },
-    {
-      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Helper\/VPLogger.swift",
-      "kind": "StringLiteral",
-      "offset": 224,
-      "length": 7,
-      "value": "\"ERROR\""
-    },
-    {
-      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Helper\/VPLogger.swift",
-      "kind": "BooleanLiteral",
-      "offset": 388,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Helper\/VPLogger.swift",
-      "kind": "StringLiteral",
-      "offset": 453,
-      "length": 22,
-      "value": "\"[INFYU_VIDEO_PLAYER]\""
-    },
-    {
-      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Helper\/VPLogger.swift",
-      "kind": "StringLiteral",
-      "offset": 654,
-      "length": 21,
-      "value": "\"yyyy-MM-dd HH:mm:ss\""
-    },
-    {
-      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Helper\/VPLogger.swift",
-      "kind": "StringLiteral",
-      "offset": 722,
-      "length": 13,
-      "value": "\"en_US_POSIX\""
-    },
-    {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Playlist\/Controllers\/PlaylistController.swift",
       "kind": "IntegerLiteral",
       "offset": 376,
@@ -29375,77 +29497,77 @@
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Playlist\/Views\/PlaylistVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1737,
+      "offset": 1742,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Playlist\/Views\/PlaylistVideoView.swift",
       "kind": "StringLiteral",
-      "offset": 1800,
+      "offset": 1805,
       "length": 26,
       "value": "\"Selected video: \""
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Playlist\/Views\/PlaylistVideoView.swift",
       "kind": "StringLiteral",
-      "offset": 1825,
+      "offset": 1830,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Playlist\/Views\/PlaylistVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1863,
+      "offset": 1868,
       "length": 3,
       "value": "350"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Playlist\/Views\/PlaylistVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1910,
+      "offset": 1915,
       "length": 2,
       "value": "51"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Playlist\/Views\/PlaylistVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1913,
+      "offset": 1918,
       "length": 3,
       "value": "266"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Playlist\/Views\/PlaylistVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1925,
+      "offset": 1930,
       "length": 2,
       "value": "51"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Playlist\/Views\/PlaylistVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1928,
+      "offset": 1933,
       "length": 3,
       "value": "266"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Playlist\/Views\/PlaylistVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1939,
+      "offset": 1944,
       "length": 2,
       "value": "51"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Playlist\/Views\/PlaylistVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1942,
+      "offset": 1947,
       "length": 3,
       "value": "266"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Playlist\/Views\/PlaylistVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1956,
+      "offset": 1961,
       "length": 1,
       "value": "1"
     },
@@ -29588,6 +29710,13 @@
       "offset": 1325,
       "length": 3,
       "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Videos\/VideoPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 469,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Views\/KidsProgressBar.swift",
@@ -29782,139 +29911,139 @@
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
       "offset": 529,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
-      "kind": "BooleanLiteral",
-      "offset": 585,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
-      "kind": "BooleanLiteral",
-      "offset": 639,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
-      "kind": "BooleanLiteral",
-      "offset": 692,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
-      "kind": "BooleanLiteral",
-      "offset": 749,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
-      "kind": "BooleanLiteral",
-      "offset": 801,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
-      "kind": "BooleanLiteral",
-      "offset": 847,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
-      "kind": "BooleanLiteral",
-      "offset": 896,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
-      "kind": "BooleanLiteral",
-      "offset": 949,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
-      "kind": "BooleanLiteral",
-      "offset": 998,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1053,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
-      "offset": 1111,
+      "offset": 586,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
-      "offset": 1162,
+      "offset": 641,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
-      "offset": 1277,
+      "offset": 694,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 751,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 803,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 849,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 898,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 951,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1000,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1055,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
-      "offset": 1331,
+      "offset": 1113,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
-      "offset": 1378,
+      "offset": 1164,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1279,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
-      "offset": 1430,
+      "offset": 1333,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1380,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1432,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 1602,
+      "offset": 1604,
       "length": 90,
       "value": "\"https:\/\/d142uv38695ylm.cloudfront.net\/videos\/promo\/allesneu.land-promo-trailer-360p.m3u8\""
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
       "kind": "IntegerLiteral",
-      "offset": 1701,
+      "offset": 1703,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
       "kind": "IntegerLiteral",
-      "offset": 1751,
+      "offset": 1753,
       "length": 1,
       "value": "0"
     },

@@ -37,6 +37,28 @@ extension SwiftUICore.View {
   
   public typealias Body = @_opaqueReturnTypeOf("$s16UnityVideoPlugin18HiddenViewModifierV4body7contentQr7SwiftUI01_eF8_ContentVyACG_tF", 0) __
 }
+public enum LogType : Swift.String {
+  case log
+  case warning
+  case error
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class VPLogger {
+  public static var isEnabled: Swift.Bool
+  public static func print(_ message: Swift.String, type: UnityVideoPlugin.LogType = .log, file: Swift.String = #file, line: Swift.Int = #line)
+  @objc deinit
+}
+extension UnityVideoPlugin.VPLogger {
+  public static func log(_ message: Swift.String, file: Swift.String = #file, line: Swift.Int = #line)
+  public static func warning(_ message: Swift.String, file: Swift.String = #file, line: Swift.Int = #line)
+  public static func error(_ message: Swift.String, file: Swift.String = #file, line: Swift.Int = #line)
+}
 public struct Playlist : Swift.Codable, Swift.Identifiable {
   public var id: Swift.String
   public var name: Swift.String?
@@ -91,28 +113,6 @@ public struct Video : Swift.Codable {
   public var isWatched: Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
-}
-public enum LogType : Swift.String {
-  case log
-  case warning
-  case error
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.String)
-  #endif
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-@_hasMissingDesignatedInitializers final public class VPLogger {
-  public static var isEnabled: Swift.Bool
-  public static func print(_ message: Swift.String, type: UnityVideoPlugin.LogType = .log, file: Swift.String = #file, line: Swift.Int = #line)
-  @objc deinit
-}
-extension UnityVideoPlugin.VPLogger {
-  public static func log(_ message: Swift.String, file: Swift.String = #file, line: Swift.Int = #line)
-  public static func warning(_ message: Swift.String, file: Swift.String = #file, line: Swift.Int = #line)
-  public static func error(_ message: Swift.String, file: Swift.String = #file, line: Swift.Int = #line)
 }
 @_hasMissingDesignatedInitializers final public class PlaylistController : Combine.ObservableObject {
   #if compiler(>=5.3) && $NonescapableTypes
@@ -621,12 +621,12 @@ public class VideoPlayerService {
 }
 extension UnityVideoPlugin.DissabledViewModifier : Swift.Sendable {}
 extension UnityVideoPlugin.HiddenViewModifier : Swift.Sendable {}
-extension UnityVideoPlugin.SubscriptionStatus : Swift.Equatable {}
-extension UnityVideoPlugin.SubscriptionStatus : Swift.Hashable {}
-extension UnityVideoPlugin.SubscriptionStatus : Swift.RawRepresentable {}
 extension UnityVideoPlugin.LogType : Swift.Equatable {}
 extension UnityVideoPlugin.LogType : Swift.Hashable {}
 extension UnityVideoPlugin.LogType : Swift.RawRepresentable {}
+extension UnityVideoPlugin.SubscriptionStatus : Swift.Equatable {}
+extension UnityVideoPlugin.SubscriptionStatus : Swift.Hashable {}
+extension UnityVideoPlugin.SubscriptionStatus : Swift.RawRepresentable {}
 extension UnityVideoPlugin.PlaylistView : Swift.Sendable {}
 extension UnityVideoPlugin.VideoPlayerView : Swift.Sendable {}
 extension UnityVideoPlugin.SwiftUISlider : Swift.Sendable {}
