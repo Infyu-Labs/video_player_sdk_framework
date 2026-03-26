@@ -54,4 +54,20 @@ public class SkidosVideoPlayer : MonoBehaviour
         Debug.Log("Unity received video finished event: " + msg);
         // Add unity logic here
     }
+
+    public void OnVideoTileClicked(string videoId)
+    {
+        Debug.Log("Unity received video tile clicked event: " + videoId);
+        // Show Ad here, then call VideoPlayerBridge.AdCompletedResumePlayback()
+        // Example:
+        // ShowAd(() => { playerBridge.ResumeAfterAd(); });
+    }
+
+    public void OnNextVideoAdRequired(string index)
+    {
+        Debug.Log("Unity received next video ad required event: " + index);
+        // Show Ad here, then call VideoPlayerBridge.AdCompletedResumePlayback()
+        // Example:
+        // ShowAd(() => { playerBridge.ResumeAfterAd(); });
+    }
 }
