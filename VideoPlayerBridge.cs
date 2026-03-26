@@ -79,18 +79,15 @@ public class VideoPlayerBridge : MonoBehaviour
     private static extern void setShowTimeDuration(bool visible);
 
     [DllImport("__Internal")]
-    private static extern void registerUnityCallback();
+    private static extern void registerUnityCallback(UnityCallback callback);
 
-    #endregion
+    public delegate void UnityCallback(string message);
 
-    #region Initialization
-
-    void Start()
+    [AOT.MonoPInvokeCallback(typeof(UnityCallback))]
+    public static void OnSwiftEvent(string message)
     {
-#if UNITY_IOS && !UNITY_EDITOR
-        registerUnityCallback();
-        Debug.Log("VideoPlayerBridge: Unity callback registered with Swift SDK");
-#endif
+        Debug.Log("Video Event: " + message);
+        // Parse message like "event:exit,total:300,watched:240"
     }
 
     #endregion
@@ -233,78 +230,25 @@ public class VideoPlayerBridge : MonoBehaviour
 
     #endregion
 
-    #region P/Invoke - Playlist, Premium & Ad Functions
-
+    // Set Playlists (JSON String)
     [DllImport("__Internal")]
     private static extern void SetPlaylists(string json);
 
+    // Set Episodes (JSON String)
     [DllImport("__Internal")]
     private static extern void SetEpisodes(string json);
-
+    
+    // Play Playlist by ID
     [DllImport("__Internal")]
     private static extern void PlayPlaylist(string playlistId);
-
+    
     [DllImport("__Internal")]
     private static extern void SetPremium(bool value);
 
     [DllImport("__Internal")]
     private static extern void SetAdRequired(bool value);
-
+    
     [DllImport("__Internal")]
     private static extern void AdCompletedResumePlayback();
 
-    #endregion
-
-    #region Wrapper Functions - Playlist, Premium & Ad
-
-    /// <summary>
-    /// Set episodes data. Must be called before SetPlaylistData() and PlayPlaylistById().
-    /// </summary>
-    public void SetEpisodesData(string json)
-    {
-        SetEpisodes(json);
-    }
-
-    /// <summary>
-    /// Set playlist metadata. Must be called after SetEpisodesData() and before PlayPlaylistById().
-    /// </summary>
-    public void SetPlaylistData(string json)
-    {
-        SetPlaylists(json);
-    }
-
-    /// <summary>
-    /// Start playing a playlist by its ID. Call SetEpisodesData() and SetPlaylistData() first.
-    /// </summary>
-    public void PlayPlaylistById(string playlistId)
-    {
-        PlayPlaylist(playlistId);
-    }
-
-    /// <summary>
-    /// Set premium status. Call this BEFORE PlayPlaylistById() to ensure correct ad behavior.
-    /// true = Premium (no ads), false = Free (ads enabled).
-    /// </summary>
-    public void SetPremiumStatus(bool isPremium)
-    {
-        SetPremium(isPremium);
-    }
-
-    /// <summary>
-    /// Set whether an ad is required before playback.
-    /// </summary>
-    public void SetAdRequiredStatus(bool isRequired)
-    {
-        SetAdRequired(isRequired);
-    }
-
-    /// <summary>
-    /// Call this after an ad has completed to resume video playback in the SDK.
-    /// </summary>
-    public void ResumeAfterAd()
-    {
-        AdCompletedResumePlayback();
-    }
-
-    #endregion
 }
