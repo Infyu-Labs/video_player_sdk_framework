@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		UzXG4pgEnLJNIE5GoQyQ8TljOl4=
+		EOAXTxmCZMFUXwA/PJzI60JOX+k=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		1sJiaLxTFs5Otia+Uy0cvayxQZI=
+		XAY2TZnVCjT9dLsQuZ1+0lvffnk=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ysi317Qlf+jHtGFwnwJ4kqAk934=
+		rL3iQJkf6N9uM5QHjnQdjMX39S8=
 		</data>
 		<key>OFL.txt</key>
 		<data>
@@ -126,14 +126,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TaWK47YlHwXFGVT5C8RYUTrYjo8uzSZVihOTnXJ0S/8=
+			ukN3atTo3CMKh4aHoAQ1YPtQX5H1du7ZcWfVFUtoZOw=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ob1AoqyYY88BKM6i2b4nfcAZBi5+wPwHxUDuuWzM62I=
+			PNRq1JSQybHMDh/fFiRS+mw8gT9nKUI4KscIdkgUmhY=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -161,7 +161,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mG2+dgiGwLL3yui8hV00x27FtNTGZftQKRudFecoFDk=
+			FtgzdDjfLEKdxvVXOBhzIbCfxXO3Si9UY7SEngWlQkE=
 			</data>
 		</dict>
 		<key>OFL.txt</key>
