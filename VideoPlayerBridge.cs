@@ -244,9 +244,6 @@ public class VideoPlayerBridge : MonoBehaviour
     
     [DllImport("__Internal")]
     private static extern void SetPremium(bool value);
-
-    [DllImport("__Internal")]
-    private static extern void SetAdRequired(bool value);
     
     [DllImport("__Internal")]
     private static extern void AdCompletedResumePlayback();
