@@ -533,6 +533,7 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
+  public var wasPlayingBeforeScrub: Swift.Bool
   public func formatTime(seconds: Swift.Double) -> Swift.String
   public func cleanup()
   public func toggleControls()

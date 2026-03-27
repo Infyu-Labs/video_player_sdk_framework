@@ -23453,6 +23453,96 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "wasPlayingBeforeScrub",
+            "printedName": "wasPlayingBeforeScrub",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16UnityVideoPlugin16PlayerControllerC21wasPlayingBeforeScrubSbvp",
+            "mangledName": "$s16UnityVideoPlugin16PlayerControllerC21wasPlayingBeforeScrubSbvp",
+            "moduleName": "UnityVideoPlugin",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin16PlayerControllerC21wasPlayingBeforeScrubSbvg",
+                "mangledName": "$s16UnityVideoPlugin16PlayerControllerC21wasPlayingBeforeScrubSbvg",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin16PlayerControllerC21wasPlayingBeforeScrubSbvs",
+                "mangledName": "$s16UnityVideoPlugin16PlayerControllerC21wasPlayingBeforeScrubSbvs",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16UnityVideoPlugin16PlayerControllerC21wasPlayingBeforeScrubSbvM",
+                "mangledName": "$s16UnityVideoPlugin16PlayerControllerC21wasPlayingBeforeScrubSbvM",
+                "moduleName": "UnityVideoPlugin",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "addPeriodicTimeObserver",
             "printedName": "addPeriodicTimeObserver()",
@@ -30295,7 +30385,7 @@
       "kind": "IntegerLiteral",
       "offset": 428,
       "length": 1,
-      "value": "1"
+      "value": "0"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
@@ -30426,28 +30516,42 @@
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
       "kind": "StringLiteral",
-      "offset": 1604,
+      "offset": 1602,
       "length": 90,
       "value": "\"https:\/\/d142uv38695ylm.cloudfront.net\/videos\/promo\/allesneu.land-promo-trailer-360p.m3u8\""
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
       "kind": "IntegerLiteral",
-      "offset": 1703,
+      "offset": 1701,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
       "kind": "IntegerLiteral",
-      "offset": 1753,
+      "offset": 1749,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
       "kind": "BooleanLiteral",
-      "offset": 10599,
+      "offset": 1898,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10098,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/UnityVideoPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10147,
       "length": 5,
       "value": "false"
     },
