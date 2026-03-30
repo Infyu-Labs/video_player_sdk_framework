@@ -4,145 +4,207 @@ using UnityEngine;
 
 public class VideoPlayerBridge : MonoBehaviour
 {
-    #region P/Invoke - Call Swift Functions
-    
-    // Load Video
+    #region P/Invoke - Native Swift Functions
+
     [DllImport("__Internal")]
     private static extern void loadVideo(string url);
 
-    // Play Video
     [DllImport("__Internal")]
     private static extern void play();
 
-    // Pause Video
     [DllImport("__Internal")]
     private static extern void pause();
 
-    // Stop Video
     [DllImport("__Internal")]
     private static extern void stop();
 
-    // Seek Forward
     [DllImport("__Internal")]
     private static extern void seekForward(double seconds);
 
-    // Seek Backward
     [DllImport("__Internal")]
     private static extern void seekBackward(double seconds);
 
-    // Seek to specific value
     [DllImport("__Internal")]
     private static extern void seekTo(double value);
 
-    // Cleanup
     [DllImport("__Internal")]
     private static extern void cleanup();
 
-    // Set Video URLs
     [DllImport("__Internal")]
     private static extern void setURLS(IntPtr urlArray, int count);
 
-    // Set Visibility for Forward Button
     [DllImport("__Internal")]
     private static extern void setShowForwardButton(bool visible);
 
-    // Set Visibility for Backward Button
     [DllImport("__Internal")]
     private static extern void setShowBackwordButton(bool visible);
 
-    // Set Visibility for Back 10 Seconds Button
     [DllImport("__Internal")]
     private static extern void setShowBack10Button(bool visible);
 
-    // Set Visibility for Forward 10 Seconds Button
     [DllImport("__Internal")]
     private static extern void setShowFor10Button(bool visible);
 
-    // Set Visibility for Play/Pause Button
     [DllImport("__Internal")]
     private static extern void setShowPlayPauseButton(bool visible);
 
-    // Set Visibility for Back Button
     [DllImport("__Internal")]
     private static extern void setShowBackButton(bool visible);
 
-    // Set Visibility for Logo
     [DllImport("__Internal")]
     private static extern void setShowLogo(bool visible);
 
-    // Set Visibility for Seekbar
     [DllImport("__Internal")]
     private static extern void setShowSeekbar(bool visible);
 
-    // Set Visibility for Time Duration
     [DllImport("__Internal")]
     private static extern void setShowTimeDuration(bool visible);
 
     [DllImport("__Internal")]
+    private static extern void SetPlaylists(string json);
+
+    [DllImport("__Internal")]
+    private static extern void SetEpisodes(string json);
+
+    [DllImport("__Internal")]
+    private static extern void PlayPlaylist(string playlistId);
+
+    [DllImport("__Internal")]
+    private static extern void SetPremium(bool value);
+
+    [DllImport("__Internal")]
+    private static extern void SetAdRequired(bool value);
+
+    [DllImport("__Internal")]
+    private static extern void AdCompletedResumePlayback();
+
+    [DllImport("__Internal")]
     private static extern void registerUnityCallback(UnityCallback callback);
+
+    #endregion
+
+    #region Delegate Callback from Swift
 
     public delegate void UnityCallback(string message);
 
+    /// <summary>
+    /// C# events that game code can subscribe to for video player events.
+    /// Usage: VideoPlayerBridge.OnAdRequired += () => { ShowYourAd(); };
+    /// </summary>
+    public static event Action OnAdRequired;
+    public static event Action OnUserExit;
+    public static event Action<string> OnVideoFinished;
+    public static event Action<string> OnVideoTileClicked;
+    public static event Action<string> OnNextVideoAdRequired;
+    public static event Action OnCallbackRegistered;
+    public static event Action<string> OnVideoPlay;
+    public static event Action<string> OnVideoPause;
+    public static event Action<string> OnVideoStop;
+
+    /// <summary>
+    /// Called by Swift SDK via the delegate function pointer.
+    /// Message format: "EventName:value"
+    /// </summary>
     [AOT.MonoPInvokeCallback(typeof(UnityCallback))]
     public static void OnSwiftEvent(string message)
     {
-        Debug.Log("Video Event: " + message);
-        // Parse message like "event:exit,total:300,watched:240"
+        Debug.Log("[VideoPlayerBridge] Swift Event: " + message);
+
+        if (string.IsNullOrEmpty(message)) return;
+
+        // Parse "EventName:value"
+        string eventName = message;
+        string value = "";
+        int colonIndex = message.IndexOf(':');
+        if (colonIndex >= 0)
+        {
+            eventName = message.Substring(0, colonIndex);
+            value = message.Substring(colonIndex + 1);
+        }
+
+        switch (eventName)
+        {
+            case "OnViewDismissed":
+                if (value == "ad_required")
+                {
+                    Debug.Log("[VideoPlayerBridge] >> AD REQUIRED — show ad now!");
+                    OnAdRequired?.Invoke();
+                }
+                else if (value == "user_exit")
+                {
+                    Debug.Log("[VideoPlayerBridge] >> User exited video player");
+                    OnUserExit?.Invoke();
+                }
+                break;
+
+            case "OnVideoFinished":
+                Debug.Log("[VideoPlayerBridge] >> Video finished at index: " + value);
+                OnVideoFinished?.Invoke(value);
+                break;
+
+            case "OnNextVideoAdRequired":
+                Debug.Log("[VideoPlayerBridge] >> Ad required before next video at index: " + value);
+                OnNextVideoAdRequired?.Invoke(value);
+                break;
+
+            case "OnVideoTileClicked":
+                Debug.Log("[VideoPlayerBridge] >> Video tile clicked: " + value);
+                OnVideoTileClicked?.Invoke(value);
+                break;
+
+            case "CallBack_registered":
+                Debug.Log("[VideoPlayerBridge] >> Callback registered with Swift SDK");
+                OnCallbackRegistered?.Invoke();
+                break;
+
+            case "OnVideoPlay":
+                OnVideoPlay?.Invoke(value);
+                break;
+
+            case "OnVideoPause":
+                OnVideoPause?.Invoke(value);
+                break;
+
+            case "OnVideoStop":
+                OnVideoStop?.Invoke(value);
+                break;
+
+            case "OnVideoClosed":
+                Debug.Log("[VideoPlayerBridge] >> Video closed: " + value);
+                OnUserExit?.Invoke();
+                break;
+
+            default:
+                Debug.Log("[VideoPlayerBridge] >> Unhandled event: " + eventName + " value: " + value);
+                break;
+        }
     }
 
     #endregion
 
-    #region Wrapper Functions (C# Methods to Call from Unity)
+    #region Initialization
 
-    // Wrapper to load video
-    public void LoadVideo(string url)
+    void Start()
     {
-        loadVideo(url);
+#if UNITY_IOS && !UNITY_EDITOR
+        registerUnityCallback(OnSwiftEvent);
+        Debug.Log("[VideoPlayerBridge] Callback registered with Swift SDK");
+#endif
     }
 
-    // Wrapper to play video
-    public void Play()
-    {
-        play();
-    }
+    #endregion
 
-    // Wrapper to pause video
-    public void Pause()
-    {
-        pause();
-    }
+    #region Public API — Call These From Your Game Code
 
-    // Wrapper to stop video
-    public void Stop()
-    {
-        stop();
-    }
+    public void LoadVideo(string url) { loadVideo(url); }
+    public void Play() { play(); }
+    public void Pause() { pause(); }
+    public void Stop() { stop(); }
+    public void SeekForward(double seconds) { seekForward(seconds); }
+    public void SeekBackward(double seconds) { seekBackward(seconds); }
+    public void SeekTo(double value) { seekTo(value); }
+    public void Cleanup() { cleanup(); }
 
-    // Wrapper to seek forward
-    public void SeekForward(double seconds)
-    {
-        seekForward(seconds);
-    }
-
-    // Wrapper to seek backward
-    public void SeekBackward(double seconds)
-    {
-        seekBackward(seconds);
-    }
-
-    // Wrapper to seek to specific time
-    public void SeekTo(double value)
-    {
-        seekTo(value);
-    }
-
-    // Wrapper to cleanup video
-    public void Cleanup()
-    {
-        cleanup();
-    }
-
-    // Wrapper to set URLs
     public void SetURLs(string[] urls)
     {
         IntPtr urlArray = MarshalArray(urls);
@@ -150,72 +212,50 @@ public class VideoPlayerBridge : MonoBehaviour
         Marshal.FreeHGlobal(urlArray);
     }
 
-    // Wrapper to show/hide forward button
-    public void ShowForwardButton(bool visible)
-    {
-        setShowForwardButton(visible);
-    }
+    public void ShowForwardButton(bool visible) { setShowForwardButton(visible); }
+    public void ShowBackwordButton(bool visible) { setShowBackwordButton(visible); }
+    public void ShowBack10Button(bool visible) { setShowBack10Button(visible); }
+    public void ShowFor10Button(bool visible) { setShowFor10Button(visible); }
+    public void ShowPlayPauseButton(bool visible) { setShowPlayPauseButton(visible); }
+    public void ShowBackButton(bool visible) { setShowBackButton(visible); }
+    public void ShowLogo(bool visible) { setShowLogo(visible); }
+    public void ShowSeekbar(bool visible) { setShowSeekbar(visible); }
+    public void ShowTimeDuration(bool visible) { setShowTimeDuration(visible); }
 
-    // Wrapper to show/hide backward button
-    public void ShowBackwordButton(bool visible)
-    {
-        setShowBackwordButton(visible);
-    }
+    /// <summary>
+    /// Set episodes data. Call BEFORE SetPlaylistData().
+    /// </summary>
+    public void SetEpisodesData(string json) { SetEpisodes(json); }
 
-    // Wrapper to show/hide back 10 button
-    public void ShowBack10Button(bool visible)
-    {
-        setShowBack10Button(visible);
-    }
+    /// <summary>
+    /// Set playlist metadata. Call AFTER SetEpisodesData().
+    /// </summary>
+    public void SetPlaylistData(string json) { SetPlaylists(json); }
 
-    // Wrapper to show/hide forward 10 button
-    public void ShowFor10Button(bool visible)
-    {
-        setShowFor10Button(visible);
-    }
+    /// <summary>
+    /// Start playing a playlist by ID. Call after SetEpisodesData() and SetPlaylistData().
+    /// </summary>
+    public void PlayPlaylistById(string playlistId) { PlayPlaylist(playlistId); }
 
-    // Wrapper to show/hide play/pause button
-    public void ShowPlayPauseButton(bool visible)
-    {
-        setShowPlayPauseButton(visible);
-    }
+    /// <summary>
+    /// Set premium status. true = no ads, false = ads enabled.
+    /// Call BEFORE PlayPlaylistById().
+    /// </summary>
+    public void SetPremiumStatus(bool isPremium) { SetPremium(isPremium); }
 
-    // Wrapper to show/hide back button
-    public void ShowBackButton(bool visible)
-    {
-        setShowBackButton(visible);
-    }
+    /// <summary>
+    /// Set whether an ad is required before playback.
+    /// </summary>
+    public void SetAdRequiredStatus(bool isRequired) { SetAdRequired(isRequired); }
 
-    // Wrapper to show/hide logo
-    public void ShowLogo(bool visible)
-    {
-        setShowLogo(visible);
-    }
-
-    // Wrapper to show/hide seekbar
-    public void ShowSeekbar(bool visible)
-    {
-        setShowSeekbar(visible);
-    }
-
-    // Wrapper to show/hide time duration
-    public void ShowTimeDuration(bool visible)
-    {
-        setShowTimeDuration(visible);
-    }
-
-    //calllback from back button 
-    public void OnSwiftBackButtonPressed(string message)
-    {
-        Debug.Log("Swift player back pressed!");
-        
-        //Add here unity work 
-       
-    }
+    /// <summary>
+    /// Call this AFTER your ad finishes to resume video playback in the SDK.
+    /// </summary>
+    public void ResumeAfterAd() { AdCompletedResumePlayback(); }
 
     #endregion
 
-    #region Helper Method - Convert C# String Array to UnsafePointer
+    #region Helper
 
     private IntPtr MarshalArray(string[] array)
     {
@@ -229,23 +269,4 @@ public class VideoPlayerBridge : MonoBehaviour
     }
 
     #endregion
-
-    // Set Playlists (JSON String)
-    [DllImport("__Internal")]
-    private static extern void SetPlaylists(string json);
-
-    // Set Episodes (JSON String)
-    [DllImport("__Internal")]
-    private static extern void SetEpisodes(string json);
-    
-    // Play Playlist by ID
-    [DllImport("__Internal")]
-    private static extern void PlayPlaylist(string playlistId);
-    
-    [DllImport("__Internal")]
-    private static extern void SetPremium(bool value);
-    
-    [DllImport("__Internal")]
-    private static extern void AdCompletedResumePlayback();
-
 }
