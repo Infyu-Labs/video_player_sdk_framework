@@ -14,15 +14,15 @@
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		5Fx2FxxdFBgfilIsydy4xioeP18=
+		aisUd2wN78UoilpsD+mBy74ivZc=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		a8TCwrLcIQ5NEDXsszwy4rLg80I=
+		OgEF5tppMlQVyXbkp5Hqao0fsvo=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		GtYAy5OfVERSs5fYS6sdYt8p8/w=
+		nYeFPeKozDnN9BY0g1I18+X3EYU=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		GtYAy5OfVERSs5fYS6sdYt8p8/w=
+		nYeFPeKozDnN9BY0g1I18+X3EYU=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -150,21 +150,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hNkCjq9f88XAhO9Aa0ubrMK6Ld3cxpgNW+RD4tGaqJM=
+			E+7ybGdV74bv5CXpiAjHKl4sGs3K/J/dIejcIbSJtqM=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VDa/7EM3V4+hzXxsI5h37aO0U92JnYhOBWz209gzDks=
+			W9rAqk8qf5QVW+ohueH9gzu27z7ODRrCKR9V13a+KHo=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eM0x6z4pJVv2s8ITe2Qe/wko6LwHu8UmEihDvjF3/T8=
+			uZ7Knn6CXJwrS300Vrw7yH20Ri6KUprH5wMapvkcSvg=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -199,7 +199,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eM0x6z4pJVv2s8ITe2Qe/wko6LwHu8UmEihDvjF3/T8=
+			uZ7Knn6CXJwrS300Vrw7yH20Ri6KUprH5wMapvkcSvg=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>

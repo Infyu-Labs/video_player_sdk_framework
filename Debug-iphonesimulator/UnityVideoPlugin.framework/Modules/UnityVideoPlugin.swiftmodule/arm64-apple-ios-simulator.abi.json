@@ -29811,35 +29811,35 @@
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Playlist\/Views\/PlaylistBottomView.swift",
       "kind": "StringLiteral",
-      "offset": 2819,
+      "offset": 2825,
       "length": 20,
       "value": "\"video: \""
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Playlist\/Views\/PlaylistBottomView.swift",
       "kind": "StringLiteral",
-      "offset": 2838,
+      "offset": 2844,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Playlist\/Views\/PlaylistBottomView.swift",
       "kind": "StringLiteral",
-      "offset": 2892,
+      "offset": 2898,
       "length": 26,
       "value": "\"playlist: \""
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Playlist\/Views\/PlaylistBottomView.swift",
       "kind": "StringLiteral",
-      "offset": 2917,
+      "offset": 2923,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/enpointe\/Desktop\/video_player_sdk_code\/UnityVideoPlugin\/UnityVideoPlugin\/Playlist\/Views\/PlaylistBottomView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2947,
+      "offset": 2953,
       "length": 2,
       "value": "50"
     },
