@@ -79,12 +79,6 @@ public class VideoPlayerBridge : MonoBehaviour
     private static extern void AdCompletedResumePlayback();
 
     [DllImport("__Internal")]
-    private static extern void SetAdInterval(double seconds);
-
-    [DllImport("__Internal")]
-    private static extern void SetMinDurationForAds(double seconds);
-
-    [DllImport("__Internal")]
     private static extern void registerUnityCallback(UnityCallback callback);
 
     #endregion
@@ -106,7 +100,6 @@ public class VideoPlayerBridge : MonoBehaviour
     public static event Action<string> OnVideoPlay;
     public static event Action<string> OnVideoPause;
     public static event Action<string> OnVideoStop;
-    public static event Action<string> OnMidVideoAdRequired;
 
     /// <summary>
     /// Called by Swift SDK via the delegate function pointer.
@@ -174,12 +167,6 @@ public class VideoPlayerBridge : MonoBehaviour
 
             case "OnVideoStop":
                 OnVideoStop?.Invoke(value);
-                break;
-
-            case "OnMidVideoAdRequired":
-                Debug.Log("[VideoPlayerBridge] >> Mid-video ad required at time: " + value);
-                OnMidVideoAdRequired?.Invoke(value);
-                OnAdRequired?.Invoke();
                 break;
 
             case "OnVideoClosed":
@@ -265,18 +252,6 @@ public class VideoPlayerBridge : MonoBehaviour
     /// Call this AFTER your ad finishes to resume video playback in the SDK.
     /// </summary>
     public void ResumeAfterAd() { AdCompletedResumePlayback(); }
-
-    /// <summary>
-    /// Set the interval (in seconds) between mid-video ads. Default: 60s.
-    /// Only applies to free users watching videos longer than MinDurationForAds.
-    /// </summary>
-    public void SetAdIntervalSeconds(double seconds) { SetAdInterval(seconds); }
-
-    /// <summary>
-    /// Set the minimum video duration (in seconds) required to enable mid-video ads. Default: 120s.
-    /// Videos shorter than this will not trigger mid-video ads.
-    /// </summary>
-    public void SetMinDurationForMidAds(double seconds) { SetMinDurationForAds(seconds); }
 
     #endregion
 
