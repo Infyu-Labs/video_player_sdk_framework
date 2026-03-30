@@ -1,11 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name UnityVideoPlugin
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name UnityVideoPlugin
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
 import AVKit
 import Combine
 import DeveloperToolsSupport
 import Foundation
+import MachO
 import Swift
 import SwiftUI
 import UIKit
@@ -14,9 +15,7 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 extension UIKit.UIApplication {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func topMostViewController() -> UIKit.UIViewController?
-  #endif
 }
 extension UIKit.UIImage {
   public func resized(to target: CoreFoundation.CGSize) -> UIKit.UIImage
@@ -41,9 +40,7 @@ public enum LogType : Swift.String {
   case log
   case warning
   case error
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -95,9 +92,7 @@ public struct Episode : Swift.Codable {
 public enum SubscriptionStatus : Swift.String {
   case free
   case premium
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -115,39 +110,31 @@ public struct Video : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers final public class PlaylistController : Combine.ObservableObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @Combine.Published @_projectedValueProperty($currentVideoID) final public var currentVideoID: Swift.String? {
+  @Combine.Published<Swift.String?> @_projectedValueProperty($currentVideoID) final public var currentVideoID: Swift.String? {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     _modify
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public var $currentVideoID: Combine.Published<Swift.String?>.Publisher {
     get
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @Combine.Published @_projectedValueProperty($countdownVideoID) final public var countdownVideoID: Swift.String? {
+  @Combine.Published<Swift.String?> @_projectedValueProperty($countdownVideoID) final public var countdownVideoID: Swift.String? {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     _modify
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public var $countdownVideoID: Combine.Published<Swift.String?>.Publisher {
     get
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  #endif
-  @Combine.Published @_projectedValueProperty($remainingTime) final public var remainingTime: Swift.Int {
+  @Combine.Published<Swift.Int> @_projectedValueProperty($remainingTime) final public var remainingTime: Swift.Int {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -159,7 +146,7 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($currentPlaylist) final public var currentPlaylist: UnityVideoPlugin.Playlist {
+  @Combine.Published<UnityVideoPlugin.Playlist> @_projectedValueProperty($currentPlaylist) final public var currentPlaylist: UnityVideoPlugin.Playlist {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -171,22 +158,18 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
-  @Combine.Published @_projectedValueProperty($nextPlaylist) final public var nextPlaylist: UnityVideoPlugin.Playlist? {
+  @Combine.Published<UnityVideoPlugin.Playlist?> @_projectedValueProperty($nextPlaylist) final public var nextPlaylist: UnityVideoPlugin.Playlist? {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     _modify
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   final public var $nextPlaylist: Combine.Published<UnityVideoPlugin.Playlist?>.Publisher {
     get
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  #endif
   final public var videos: [UnityVideoPlugin.Video]
   @objc deinit
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
@@ -203,7 +186,7 @@ public struct Video : Swift.Codable {
 }
 
 @_Concurrency.MainActor @preconcurrency public struct VideoPlayerView : SwiftUICore.View {
-  @SwiftUICore.ObservedObject @_projectedValueProperty($playerController) @_Concurrency.MainActor @preconcurrency public var playerController: UnityVideoPlugin.PlayerController {
+  @SwiftUICore.ObservedObject<UnityVideoPlugin.PlayerController> @_projectedValueProperty($playerController) @_Concurrency.MainActor @preconcurrency public var playerController: UnityVideoPlugin.PlayerController {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -213,7 +196,7 @@ public struct Video : Swift.Codable {
   @_Concurrency.MainActor @preconcurrency public var $playerController: SwiftUICore.ObservedObject<UnityVideoPlugin.PlayerController>.Wrapper {
     get
   }
-  @SwiftUICore.ObservedObject @_projectedValueProperty($controller) @_Concurrency.MainActor @preconcurrency public var controller: UnityVideoPlugin.PlaylistController {
+  @SwiftUICore.ObservedObject<UnityVideoPlugin.PlaylistController> @_projectedValueProperty($controller) @_Concurrency.MainActor @preconcurrency public var controller: UnityVideoPlugin.PlaylistController {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -231,9 +214,7 @@ public struct Video : Swift.Codable {
 
 @_Concurrency.MainActor @preconcurrency public struct SwiftUISlider : SwiftUI.UIViewRepresentable {
   @objc final public class Coordinator : ObjectiveC.NSObject {
-    #if compiler(>=5.3) && $NonescapableTypes
     public init(value: SwiftUICore.Binding<Swift.Double>, maxValue: Swift.Double, parent: UnityVideoPlugin.SwiftUISlider? = nil)
-    #endif
     @objc deinit
   }
   @_Concurrency.MainActor @preconcurrency public func makeUIView(context: UnityVideoPlugin.SwiftUISlider.Context) -> UIKit.UISlider
@@ -243,23 +224,19 @@ public struct Video : Swift.Codable {
   public typealias UIViewType = UIKit.UISlider
 }
 @objc @_inheritsConvenienceInitializers public class PlayerController : ObjectiveC.NSObject, Foundation.ObservableObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @Combine.Published @_projectedValueProperty($player) public var player: AVFoundation.AVPlayer? {
+  @Combine.Published<AVFoundation.AVPlayer?> @_projectedValueProperty($player) public var player: AVFoundation.AVPlayer? {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     _modify
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var $player: Combine.Published<AVFoundation.AVPlayer?>.Publisher {
     get
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  #endif
-  @Combine.Published @_projectedValueProperty($isPlaying) public var isPlaying: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($isPlaying) public var isPlaying: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -271,7 +248,7 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($currentTime) public var currentTime: Swift.Double {
+  @Combine.Published<Swift.Double> @_projectedValueProperty($currentTime) public var currentTime: Swift.Double {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -283,7 +260,7 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($duration) public var duration: Swift.Double {
+  @Combine.Published<Swift.Double> @_projectedValueProperty($duration) public var duration: Swift.Double {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -295,7 +272,7 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($buttonSize) public var buttonSize: CoreFoundation.CGFloat {
+  @Combine.Published<CoreFoundation.CGFloat> @_projectedValueProperty($buttonSize) public var buttonSize: CoreFoundation.CGFloat {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -307,7 +284,7 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($showForwardButton) public var showForwardButton: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($showForwardButton) public var showForwardButton: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -319,7 +296,7 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($showBackwordButton) public var showBackwordButton: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($showBackwordButton) public var showBackwordButton: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -331,7 +308,7 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($showBack10Button) public var showBack10Button: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($showBack10Button) public var showBack10Button: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -343,7 +320,7 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($showFor10Button) public var showFor10Button: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($showFor10Button) public var showFor10Button: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -355,7 +332,7 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($showPlayPauseButton) public var showPlayPauseButton: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($showPlayPauseButton) public var showPlayPauseButton: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -367,7 +344,7 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($showBackButton) public var showBackButton: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($showBackButton) public var showBackButton: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -379,7 +356,7 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($showLogo) public var showLogo: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($showLogo) public var showLogo: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -391,7 +368,7 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($showSeekbar) public var showSeekbar: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($showSeekbar) public var showSeekbar: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -403,7 +380,7 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($showTimeDration) public var showTimeDration: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($showTimeDration) public var showTimeDration: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -415,7 +392,7 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($showLoading) public var showLoading: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($showLoading) public var showLoading: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -427,7 +404,7 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($disableBackButton) public var disableBackButton: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($disableBackButton) public var disableBackButton: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -439,7 +416,7 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($disbleForwardButton) public var disbleForwardButton: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($disbleForwardButton) public var disbleForwardButton: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -451,7 +428,7 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($showControls) public var showControls: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($showControls) public var showControls: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -463,7 +440,7 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($showPlaylist) public var showPlaylist: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($showPlaylist) public var showPlaylist: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -475,7 +452,7 @@ public struct Video : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published @_projectedValueProperty($shouldWaitForAd) public var shouldWaitForAd: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($shouldWaitForAd) public var shouldWaitForAd: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -488,7 +465,7 @@ public struct Video : Swift.Codable {
     set
   }
   weak public var playlistController: UnityVideoPlugin.PlaylistController?
-  @Combine.Published @_projectedValueProperty($currentIndex) public var currentIndex: Swift.Int {
+  @Combine.Published<Swift.Int> @_projectedValueProperty($currentIndex) public var currentIndex: Swift.Int {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -505,9 +482,7 @@ public struct Video : Swift.Codable {
   public func setURLS(_ urls: [Swift.String])
   public func attachPlaylist(_ playlist: UnityVideoPlugin.PlaylistController)
   public func loadVideo(urlString: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
-  #endif
   public func playNextVideo(at index: Swift.Int)
   public func playNextPlaylist()
   public func play()
@@ -521,7 +496,7 @@ public struct Video : Swift.Codable {
   public func getURLs() -> [Swift.String]
   public func switchScreenBack_and_forth()
   public func backToHome()
-  @Combine.Published @_projectedValueProperty($isScrubbing) public var isScrubbing: Swift.Bool {
+  @Combine.Published<Swift.Bool> @_projectedValueProperty($isScrubbing) public var isScrubbing: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -563,10 +538,8 @@ public func seekBackward(seconds: Swift.Double)
 public func seekTo(value: Swift.Double)
 @_cdecl("cleanup")
 public func cleanup()
-#if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("setURLS")
 public func setURLS(_ cArray: Swift.UnsafePointer<Swift.UnsafePointer<Swift.CChar>?>, _ count: Swift.Int32)
-#endif
 @_cdecl("setShowForwardButton")
 public func setShowForwardButton(_ visible: Swift.Bool)
 @_cdecl("setShowBackwordButton")
@@ -596,7 +569,7 @@ public func SetPremium(_ value: Swift.Bool)
 @_cdecl("SetAdRequired")
 public func SetAdRequired(_ value: Swift.Bool)
 @_cdecl("registerUnityCallback")
-public func registerUnityCallback(_ message: Swift.UnsafePointer<Swift.CChar>)
+public func registerUnityCallback()
 @_cdecl("AdCompletedResumePlayback")
 public func AdCompletedResumePlayback()
 public class VideoPlayerService {
