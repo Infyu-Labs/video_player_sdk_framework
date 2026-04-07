@@ -79,10 +79,7 @@ public class VideoPlayerBridge : MonoBehaviour
     private static extern void AdCompletedResumePlayback();
 
     [DllImport("__Internal")]
-    private static extern void SetAdInterval(double seconds);
-
-    [DllImport("__Internal")]
-    private static extern void SetMinDurationForAds(double seconds);
+    private static extern void SetMidRollAdConfig(string json);
 
     [DllImport("__Internal")]
     private static extern void registerUnityCallback(UnityCallback callback);
@@ -106,7 +103,7 @@ public class VideoPlayerBridge : MonoBehaviour
     public static event Action<string> OnVideoPlay;
     public static event Action<string> OnVideoPause;
     public static event Action<string> OnVideoStop;
-    public static event Action<string> OnMidVideoAdRequired;
+    public static event Action<string> OnMidRollAdRequired;
 
     /// <summary>
     /// Called by Swift SDK via the delegate function pointer.
@@ -154,6 +151,12 @@ public class VideoPlayerBridge : MonoBehaviour
                 OnNextVideoAdRequired?.Invoke(value);
                 break;
 
+            case "OnMidRollAdRequired":
+                Debug.Log("[VideoPlayerBridge] >> Mid-roll ad required at time: " + value);
+                OnMidRollAdRequired?.Invoke(value);
+                OnAdRequired?.Invoke();
+                break;
+
             case "OnVideoTileClicked":
                 Debug.Log("[VideoPlayerBridge] >> Video tile clicked: " + value);
                 OnVideoTileClicked?.Invoke(value);
@@ -176,9 +179,9 @@ public class VideoPlayerBridge : MonoBehaviour
                 OnVideoStop?.Invoke(value);
                 break;
 
-            case "OnMidVideoAdRequired":
-                Debug.Log("[VideoPlayerBridge] >> Mid-video ad required at time: " + value);
-                OnMidVideoAdRequired?.Invoke(value);
+            case "OnMidRollAdRequired":
+                Debug.Log("[VideoPlayerBridge] >> Mid-roll ad required at time: " + value);
+                OnMidRollAdRequired?.Invoke(value);
                 OnAdRequired?.Invoke();
                 break;
 
@@ -263,20 +266,17 @@ public class VideoPlayerBridge : MonoBehaviour
 
     /// <summary>
     /// Call this AFTER your ad finishes to resume video playback in the SDK.
+    /// Works for pre-roll, inter-video, and mid-roll ads.
     /// </summary>
     public void ResumeAfterAd() { AdCompletedResumePlayback(); }
 
     /// <summary>
-    /// Set the interval (in seconds) between mid-video ads. Default: 60s.
-    /// Only applies to free users watching videos longer than MinDurationForAds.
+    /// Set the mid-roll ad configuration JSON. Must be called BEFORE PlayPlaylistById().
+    /// The config controls duration buckets, placement percentages, per-video overrides,
+    /// and global constraints (min gap, no-ad zones, timeout).
+    /// Pass the raw JSON string from your backend.
     /// </summary>
-    public void SetAdIntervalSeconds(double seconds) { SetAdInterval(seconds); }
-
-    /// <summary>
-    /// Set the minimum video duration (in seconds) required to enable mid-video ads. Default: 120s.
-    /// Videos shorter than this will not trigger mid-video ads.
-    /// </summary>
-    public void SetMinDurationForMidAds(double seconds) { SetMinDurationForAds(seconds); }
+    public void SetMidRollAdConfigJson(string json) { SetMidRollAdConfig(json); }
 
     #endregion
 
