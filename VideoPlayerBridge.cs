@@ -179,12 +179,6 @@ public class VideoPlayerBridge : MonoBehaviour
                 OnVideoStop?.Invoke(value);
                 break;
 
-            case "OnMidRollAdRequired":
-                Debug.Log("[VideoPlayerBridge] >> Mid-roll ad required at time: " + value);
-                OnMidRollAdRequired?.Invoke(value);
-                OnAdRequired?.Invoke();
-                break;
-
             case "OnVideoClosed":
                 Debug.Log("[VideoPlayerBridge] >> Video closed: " + value);
                 OnUserExit?.Invoke();
