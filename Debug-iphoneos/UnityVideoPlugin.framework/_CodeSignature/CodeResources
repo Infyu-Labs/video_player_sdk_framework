@@ -14,15 +14,15 @@
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		R6LeeXE9qJTu2pi5O56AAFA4NFs=
+		r+ndWwHoDIhN2GIwO46FPGp67Pw=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		FFYRCwGLubs4KDcpwsP6u/6EB+w=
+		IqwMDrSw9Sb6yM3MD9Oi2cu6pck=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		daSv/HPkSiO8BOiXi1+L7JpMQjk=
+		1g2a886D1DLvXlo46gyPJhhQg3M=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		daSv/HPkSiO8BOiXi1+L7JpMQjk=
+		1g2a886D1DLvXlo46gyPJhhQg3M=
 		</data>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		wMZ+cBe2cagCAsNX5zLzJTcHkWU=
+		OtRgHJKIBaSTjvKmsiPwnpIQKOY=
 		</data>
 		<key>OFL.txt</key>
 		<data>
@@ -126,21 +126,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BSMYzWl/UYZ+BsbgrRThDQpUkhF6h6ARB0RAqb745zU=
+			8VYAmaBXtAoDIAh/maxPXneoA6ejI9CidUBV4qhfAjg=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BGVevUkn9AHTBypEQjqTYpqtBzW0IWnPGcjCiUjKyI8=
+			t+eXPjGoiRDRC5SB6RGTD42cLu5cnELevaDtAZYI9OI=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PJjngsfeAD4SdGV+tNBV5vRt/Vx6XNDKFmcTbpjXb2o=
+			odNITgsHQyifdoiY9PhZJoQlUvlJ+1+XGd3iG5wczw4=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -154,14 +154,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PJjngsfeAD4SdGV+tNBV5vRt/Vx6XNDKFmcTbpjXb2o=
+			odNITgsHQyifdoiY9PhZJoQlUvlJ+1+XGd3iG5wczw4=
 			</data>
 		</dict>
 		<key>Modules/UnityVideoPlugin.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G6CV0Ak1zJodek2bkiw4D9u5UB6/v1SQflshPesMz/4=
+			kEehsCXbkbmC5bsTBTrUFaIzvzlX8Ex1ZITzeUIc19o=
 			</data>
 		</dict>
 		<key>OFL.txt</key>
