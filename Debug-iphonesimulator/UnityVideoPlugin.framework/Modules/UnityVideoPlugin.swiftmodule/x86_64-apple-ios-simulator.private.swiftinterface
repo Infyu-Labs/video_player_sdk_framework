@@ -14,14 +14,16 @@ import _AVKit_SwiftUI
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_Concurrency.MainActor @preconcurrency public struct PlaylistView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(playlist: UnityVideoPlugin.Playlist, onVideoSelected: @escaping (UnityVideoPlugin.Video) -> Swift.Void)
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+public enum SubscriptionStatus : Swift.String {
+  case free
+  case premium
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
-  public typealias Body = @_opaqueReturnTypeOf("$s16UnityVideoPlugin12PlaylistViewV4bodyQrvp", 0) __
 }
-
+public var subscriptionStatus: UnityVideoPlugin.SubscriptionStatus
 @objc @_inheritsConvenienceInitializers public class PlayerController : ObjectiveC.NSObject, Foundation.ObservableObject {
   @Combine.Published @_projectedValueProperty($player) public var player: AVFoundation.AVPlayer? {
     get
@@ -326,6 +328,11 @@ import _SwiftConcurrencyShims
   @objc deinit
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
 }
+@_Concurrency.MainActor @preconcurrency public struct DissabledViewModifier : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public func body(content: UnityVideoPlugin.DissabledViewModifier.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s16UnityVideoPlugin21DissabledViewModifierV4body7contentQr7SwiftUI01_eF8_ContentVyACG_tF", 0) __
+}
 public struct MidRollAdConfig : Swift.Codable {
   public let version: Swift.Int
   public let adTimeoutSeconds: Swift.Double
@@ -359,6 +366,42 @@ public struct MidRollAdConfig : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public class VideoPlayerService {
+  public var playerController: UnityVideoPlugin.PlayerController?
+  public var playlistController: UnityVideoPlugin.PlaylistController?
+  final public let adSessionTracker: UnityVideoPlugin.AdSessionTracker
+  public init()
+  public var currentIndex: Swift.Int {
+    get
+    set
+  }
+  public func loadVideo(urlString: Swift.String)
+  public func play()
+  public func pause()
+  public func stop()
+  public func seekForward(seconds: Swift.Double)
+  public func seekBackward(seconds: Swift.Double)
+  public func cleanup()
+  public func seekTo(value: Swift.Double)
+  public func setURLS(urls: [Swift.String])
+  public func setShowForwardButton(_ visible: Swift.Bool)
+  public func setShowBackwordButton(_ visible: Swift.Bool)
+  public func setShowBack10Button(_ visible: Swift.Bool)
+  public func setShowFor10Button(_ visible: Swift.Bool)
+  public func setShowPlayPauseButton(_ visible: Swift.Bool)
+  public func setShowBackButton(_ visible: Swift.Bool)
+  public func setShowLogo(_ visible: Swift.Bool)
+  public func setShowSeekbar(_ visible: Swift.Bool)
+  public func setShowTimeDuration(_ visible: Swift.Bool)
+  public func setPlaylistsFromUnity(jsonString: Swift.String)
+  public func getAllPlaylists() -> [UnityVideoPlugin.Playlist]
+  public func playPlaylist(_ id: Swift.String)
+  public func setPremium(_ isPremium: Swift.Bool)
+  public func setMidRollAdConfig(jsonString: Swift.String)
+  public func AdCompletedResumePlayback()
+  @objc deinit
+}
+
 @_Concurrency.MainActor @preconcurrency public struct VideoPlayerView : SwiftUICore.View {
   @SwiftUICore.ObservedObject @_projectedValueProperty($playerController) @_Concurrency.MainActor @preconcurrency public var playerController: UnityVideoPlugin.PlayerController {
     get
@@ -386,25 +429,23 @@ public struct MidRollAdConfig : Swift.Codable {
   public typealias Body = @_opaqueReturnTypeOf("$s16UnityVideoPlugin0B10PlayerViewV4bodyQrvp", 0) __
 }
 
-@_Concurrency.MainActor @preconcurrency public struct DissabledViewModifier : SwiftUICore.ViewModifier {
-  @_Concurrency.MainActor @preconcurrency public func body(content: UnityVideoPlugin.DissabledViewModifier.Content) -> some SwiftUICore.View
-  
-  public typealias Body = @_opaqueReturnTypeOf("$s16UnityVideoPlugin21DissabledViewModifierV4body7contentQr7SwiftUI01_eF8_ContentVyACG_tF", 0) __
-}
 extension UIKit.UIApplication {
   @_Concurrency.MainActor @preconcurrency public func topMostViewController() -> UIKit.UIViewController?
 }
-@_Concurrency.MainActor @preconcurrency public struct SwiftUISlider : SwiftUI.UIViewRepresentable {
-  @objc final public class Coordinator : ObjectiveC.NSObject {
-    public init(value: SwiftUICore.Binding<Swift.Double>, maxValue: Swift.Double, parent: UnityVideoPlugin.SwiftUISlider? = nil)
-    @objc deinit
-  }
-  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: UnityVideoPlugin.SwiftUISlider.Context) -> UIKit.UISlider
-  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: UIKit.UISlider, context: UnityVideoPlugin.SwiftUISlider.Context)
-  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> UnityVideoPlugin.SwiftUISlider.Coordinator
-  public typealias Body = Swift.Never
-  public typealias UIViewType = UIKit.UISlider
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func isHidden(_ bool: Swift.Bool) -> some SwiftUICore.View
+  
+  @_Concurrency.MainActor @preconcurrency public func isDisabled(_ bool: Swift.Bool) -> some SwiftUICore.View
+  
 }
+@_Concurrency.MainActor @preconcurrency public struct PlaylistView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(playlist: UnityVideoPlugin.Playlist, onVideoSelected: @escaping (UnityVideoPlugin.Video) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s16UnityVideoPlugin12PlaylistViewV4bodyQrvp", 0) __
+}
+
 @_hasMissingDesignatedInitializers final public class PlaylistController : Combine.ObservableObject {
   @Combine.Published @_projectedValueProperty($currentVideoID) final public var currentVideoID: Swift.String? {
     get
@@ -470,82 +511,6 @@ extension UIKit.UIApplication {
   @objc deinit
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
 }
-public enum LogType : Swift.String {
-  case log
-  case warning
-  case error
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-@_hasMissingDesignatedInitializers final public class VPLogger {
-  public static var isEnabled: Swift.Bool
-  public static func print(_ message: Swift.String, type: UnityVideoPlugin.LogType = .log, file: Swift.String = #file, line: Swift.Int = #line)
-  @objc deinit
-}
-extension UnityVideoPlugin.VPLogger {
-  public static func log(_ message: Swift.String, file: Swift.String = #file, line: Swift.Int = #line)
-  public static func warning(_ message: Swift.String, file: Swift.String = #file, line: Swift.Int = #line)
-  public static func error(_ message: Swift.String, file: Swift.String = #file, line: Swift.Int = #line)
-}
-
-public struct Playlist : Swift.Codable, Swift.Identifiable {
-  public var id: Swift.String
-  public var name: Swift.String?
-  public var thumbnail: Swift.String?
-  public var description: Swift.String?
-  public var videos: [UnityVideoPlugin.Video]
-  public static var mockPlaylist: UnityVideoPlugin.Playlist
-  public static var allPlaylists: [UnityVideoPlugin.Playlist]
-  public typealias ID = Swift.String
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public enum SampleVideos {
-  public static let dinoWorldPlaylist: UnityVideoPlugin.Playlist
-  public static let Playlist2: UnityVideoPlugin.Playlist
-  public static let Playlist3: UnityVideoPlugin.Playlist
-}
-public class VideoPlayerService {
-  public var playerController: UnityVideoPlugin.PlayerController?
-  public var playlistController: UnityVideoPlugin.PlaylistController?
-  final public let adSessionTracker: UnityVideoPlugin.AdSessionTracker
-  public init()
-  public var currentIndex: Swift.Int {
-    get
-    set
-  }
-  public func loadVideo(urlString: Swift.String)
-  public func play()
-  public func pause()
-  public func stop()
-  public func seekForward(seconds: Swift.Double)
-  public func seekBackward(seconds: Swift.Double)
-  public func cleanup()
-  public func seekTo(value: Swift.Double)
-  public func setURLS(urls: [Swift.String])
-  public func setShowForwardButton(_ visible: Swift.Bool)
-  public func setShowBackwordButton(_ visible: Swift.Bool)
-  public func setShowBack10Button(_ visible: Swift.Bool)
-  public func setShowFor10Button(_ visible: Swift.Bool)
-  public func setShowPlayPauseButton(_ visible: Swift.Bool)
-  public func setShowBackButton(_ visible: Swift.Bool)
-  public func setShowLogo(_ visible: Swift.Bool)
-  public func setShowSeekbar(_ visible: Swift.Bool)
-  public func setShowTimeDuration(_ visible: Swift.Bool)
-  public func setPlaylistsFromUnity(jsonString: Swift.String)
-  public func getAllPlaylists() -> [UnityVideoPlugin.Playlist]
-  public func playPlaylist(_ id: Swift.String)
-  public func setPremium(_ isPremium: Swift.Bool)
-  public func setMidRollAdConfig(jsonString: Swift.String)
-  public func AdCompletedResumePlayback()
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class AdSessionTracker {
-  @objc deinit
-}
 public struct Video : Swift.Codable {
   public var id: Swift.String
   public var url: Swift.String
@@ -556,7 +521,17 @@ public struct Video : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-
+@_Concurrency.MainActor @preconcurrency public struct SwiftUISlider : SwiftUI.UIViewRepresentable {
+  @objc final public class Coordinator : ObjectiveC.NSObject {
+    public init(value: SwiftUICore.Binding<Swift.Double>, maxValue: Swift.Double, parent: UnityVideoPlugin.SwiftUISlider? = nil)
+    @objc deinit
+  }
+  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: UnityVideoPlugin.SwiftUISlider.Context) -> UIKit.UISlider
+  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: UIKit.UISlider, context: UnityVideoPlugin.SwiftUISlider.Context)
+  @_Concurrency.MainActor @preconcurrency public func makeCoordinator() -> UnityVideoPlugin.SwiftUISlider.Coordinator
+  public typealias Body = Swift.Never
+  public typealias UIViewType = UIKit.UISlider
+}
 public var currentVideoPlayerService: UnityVideoPlugin.VideoPlayerService?
 public var playlists: [UnityVideoPlugin.Playlist]
 @_cdecl("loadVideo")
@@ -615,31 +590,36 @@ public func AdCompletedResumePlayback()
 @_hasMissingDesignatedInitializers public class MidRollCuePointState {
   @objc deinit
 }
-extension SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public func isHidden(_ bool: Swift.Bool) -> some SwiftUICore.View
+@_Concurrency.MainActor @preconcurrency public struct HiddenViewModifier : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public func body(content: UnityVideoPlugin.HiddenViewModifier.Content) -> some SwiftUICore.View
   
-  @_Concurrency.MainActor @preconcurrency public func isDisabled(_ bool: Swift.Bool) -> some SwiftUICore.View
-  
+  public typealias Body = @_opaqueReturnTypeOf("$s16UnityVideoPlugin18HiddenViewModifierV4body7contentQr7SwiftUI01_eF8_ContentVyACG_tF", 0) __
 }
-public enum SubscriptionStatus : Swift.String {
-  case free
-  case premium
+
+public enum LogType : Swift.String {
+  case log
+  case warning
+  case error
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
-public var subscriptionStatus: UnityVideoPlugin.SubscriptionStatus
-@_Concurrency.MainActor @preconcurrency public struct HiddenViewModifier : SwiftUICore.ViewModifier {
-  @_Concurrency.MainActor @preconcurrency public func body(content: UnityVideoPlugin.HiddenViewModifier.Content) -> some SwiftUICore.View
-  
-  public typealias Body = @_opaqueReturnTypeOf("$s16UnityVideoPlugin18HiddenViewModifierV4body7contentQr7SwiftUI01_eF8_ContentVyACG_tF", 0) __
+@_hasMissingDesignatedInitializers final public class VPLogger {
+  public static var isEnabled: Swift.Bool
+  public static func print(_ message: Swift.String, type: UnityVideoPlugin.LogType = .log, file: Swift.String = #file, line: Swift.Int = #line)
+  @objc deinit
 }
-extension UIKit.UIImage {
-  public func resized(to target: CoreFoundation.CGSize) -> UIKit.UIImage
+extension UnityVideoPlugin.VPLogger {
+  public static func log(_ message: Swift.String, file: Swift.String = #file, line: Swift.Int = #line)
+  public static func warning(_ message: Swift.String, file: Swift.String = #file, line: Swift.Int = #line)
+  public static func error(_ message: Swift.String, file: Swift.String = #file, line: Swift.Int = #line)
 }
 
+@_hasMissingDesignatedInitializers public class AdSessionTracker {
+  @objc deinit
+}
 public struct EpisodeResponse : Swift.Codable {
   public let id: Swift.String
   public let episodes: [UnityVideoPlugin.Episode]
@@ -656,14 +636,34 @@ public struct Episode : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-extension UnityVideoPlugin.PlaylistView : Swift.Sendable {}
-extension UnityVideoPlugin.VideoPlayerView : Swift.Sendable {}
-extension UnityVideoPlugin.DissabledViewModifier : Swift.Sendable {}
-extension UnityVideoPlugin.SwiftUISlider : Swift.Sendable {}
-extension UnityVideoPlugin.LogType : Swift.Equatable {}
-extension UnityVideoPlugin.LogType : Swift.Hashable {}
-extension UnityVideoPlugin.LogType : Swift.RawRepresentable {}
+extension UIKit.UIImage {
+  public func resized(to target: CoreFoundation.CGSize) -> UIKit.UIImage
+}
+public struct Playlist : Swift.Codable, Swift.Identifiable {
+  public var id: Swift.String
+  public var name: Swift.String?
+  public var thumbnail: Swift.String?
+  public var description: Swift.String?
+  public var videos: [UnityVideoPlugin.Video]
+  public static var mockPlaylist: UnityVideoPlugin.Playlist
+  public static var allPlaylists: [UnityVideoPlugin.Playlist]
+  public typealias ID = Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum SampleVideos {
+  public static let dinoWorldPlaylist: UnityVideoPlugin.Playlist
+  public static let Playlist2: UnityVideoPlugin.Playlist
+  public static let Playlist3: UnityVideoPlugin.Playlist
+}
 extension UnityVideoPlugin.SubscriptionStatus : Swift.Equatable {}
 extension UnityVideoPlugin.SubscriptionStatus : Swift.Hashable {}
 extension UnityVideoPlugin.SubscriptionStatus : Swift.RawRepresentable {}
+extension UnityVideoPlugin.DissabledViewModifier : Swift.Sendable {}
+extension UnityVideoPlugin.VideoPlayerView : Swift.Sendable {}
+extension UnityVideoPlugin.PlaylistView : Swift.Sendable {}
+extension UnityVideoPlugin.SwiftUISlider : Swift.Sendable {}
 extension UnityVideoPlugin.HiddenViewModifier : Swift.Sendable {}
+extension UnityVideoPlugin.LogType : Swift.Equatable {}
+extension UnityVideoPlugin.LogType : Swift.Hashable {}
+extension UnityVideoPlugin.LogType : Swift.RawRepresentable {}
